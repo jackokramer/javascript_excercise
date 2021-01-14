@@ -9,52 +9,17 @@ body {
   border-radius: 10px;
   background-color: #efe5dc;
   margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dice div {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
 }
 
 .dot {
-  width: 20px;
-  border-radius: 15px;
-  height: 20px;
+  border-radius: 10px;
   background-color: black;
-  margin: 35px;
-}
-
-.two-dot {
-  width: 20px;
-  border-radius: 15px;
-  height: 20px;
-  background-color: black;
-  margin: 35px;
-}
-
-.three-dot {
-  width: 20px;
-  border-radius: 15px;
-  height: 20px;
-  background-color: black;
-  margin: 35px;
-}
-
-.four-dot {
-  width: 20px;
-  border-radius: 15px;
-  height: 20px;
-  background-color: black;
-  margin: 35px;
-}
-
-.five-dot {
-  width: 20px;
-  border-radius: 15px;
-  height: 20px;
-  background-color: black;
-  margin: 35px;
-}
-
-.six-dot {
-  width: 20px;
-  border-radius: 15px;
-  height: 20px;
-  background-color: black;
-  margin: 35px;
 }
