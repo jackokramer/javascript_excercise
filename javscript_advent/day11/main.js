@@ -13,9 +13,18 @@ Example: function(
 )
 */
 
-function sumOddFiboncciNums(){
-
-
+function sumOddFiboncciNums(arr){
+let sum  = 0;
+let prev = 0;
+let current = 1;
+while(current <= num){
+    if(arr[x]/2 ===1){
+    sum+=current
+    }
+}
+const nextVal = current;
+    prev = current;
+    current = nextVal
 }
 
 describe('sumOddFibonacciNumbers()', () => {
