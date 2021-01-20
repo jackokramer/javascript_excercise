@@ -1,3 +1,4 @@
 # javascript_excercises
-# javascript_excercises
-# javascript_excercises
+##  few excercises, algorithms and projects
+
+###
