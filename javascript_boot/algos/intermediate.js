@@ -116,3 +116,4 @@ function secondToLast(arr){
 }
 
 console.log(secondToLast([2,3,'liam', 4]))
+
