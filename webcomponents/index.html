@@ -9,15 +9,36 @@
 </head>
 <body>
     <h1>Component Personalized</h1> 
-    <nav class="nav-bar">
-        <a class="link" href="">Welcome ....</a>
+    <nav class="navbar">
+        <a class="link link-name" href="">Welcome ....</a>
         <a class="link" href="">Dashboard</a>
         <a class="link" href="">Home</a>
     </nav>
     <div class="name-input-continer">
         <label for=""> Name:
-            <input type="text" name="name-input">
+            <input type="text" name="name-input" class="name-input">
         </label>
+        <div class="image">
+            <form action="" method="post">
+                <div class="input-div">
+                    <label for="url">URL:</label>
+                    <input type="text" name="url" placeholder="EnterURL Here">
+                </div>
+                <div class="input-div">
+                    <label for="color">Color: </label>
+                    <input type="color" name="color" placeholder="Choose color here Here">
+                </div>
+                <div class="input-div">
+                    <label for="width">Width: </label>
+                    <input type="text" name="width" placeholder="Enter frame width (px)">
+                </div>
+            </form>
+        </div>
+        <div class="btn-chall">
+            <button class="btn">Hide Text 🙈</button>
+            <p class="text">This is some text</p>
+        </div>
+
     <script src="index.js"></script>
 </body>
 </html>
