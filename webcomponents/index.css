@@ -104,3 +104,17 @@ div {
   margin: 0.5em;
   margin-left: 1em;
 }
+
+/*Challenge 5*/
+
+.img-main {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
