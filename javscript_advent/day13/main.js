@@ -1,11 +1,19 @@
 function avoidObstacles(nums) {
     //  write code here.
+
+    let largestNum = nums.sort(a,b => a-b)[nums.length - 1];
+    for(let x = 1; largestNum>x; x++){
+        if(nums.every(value => value%x !==0)){
+            return x
+        }    
+    }
+    /*
     let largestNum = nums.sort((a,b)=> a-b[nums.length - 1])
     for(let x = 1; largestNum-1 >=x; x++){
         if(nums.every((value)=> value%x !== 0)){
             return x;
         }
-    }
+    }*/
 }
 
 

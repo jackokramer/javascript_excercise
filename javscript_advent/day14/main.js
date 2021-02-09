@@ -11,6 +11,17 @@
  * spilt()
  */
 
+ function validTime(str){
+    const [hours, minutes] = str.split(' : ')
+    if(str.parsrInt(hours)>23 || str.parsrInt(hours)<0){
+        return false
+    }
+    else if(str.parsrInt(minutes)>59 || str.parsrInt(hours)<0){
+        return false
+    } 
+    return true
+ }
+ /*
  function validTime(str) {
     const [hours, minutes] = str.split(":")
     if(parseInt(hours)>23 || parseInt(hours)<0){
@@ -21,7 +32,7 @@
     }
     return true
 }
-
+*/
 
 
 /**

@@ -7,15 +7,25 @@ For inputArray = [3,6,-2,-5,7,3] the output should be adjacentElementsProduct(in
 7 and three produce the largest product.
  */
 function adjacentElementsProduct(nums) {
- const largestProd = nums[0]*nums[1];
+let largeProduct= nums[0] *nums[1];
+for(let x = 0; nums.length>x; x++){
+       const  adjacentProduct = nums[x]*nums[x+1];
+    }
+    if(largeProduct<adjacentProduct){
+        largeProduct = adjacentProduct;
+    }
+    return largeProduct;
+}
+
+    /* const largestProd = nums[0]*nums[1];
  for(let x = 1; nums.length-1>x; x++){
      const nextProd = nums[x] * num[x+1];
      if(largestProd<nextProd){
          largestProd = nextProd;
      }
  }
+*/
 
-}
 
 /**
  * TEST SUITE
