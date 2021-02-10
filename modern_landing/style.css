@@ -16,17 +16,40 @@ img {
   display: block;
 }
 
+header .btn {
+  padding: 10px;
+}
+
 h1,
 h2,
 h4,
 p {
   margin: 0;
 }
+section {
+  padding: 7em 0;
+}
 
 .container {
   width: 85%;
   max-width: 65em;
   margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  /**NOT WORKING
+  & > * {
+    flex-basis: 30%;
+    main-width: 15em;
+  }**/
+}
+
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem); /**Doesn't work*/
 }
 
 .btn {
@@ -55,10 +78,150 @@ p {
   text-transform: uppercase;
 }
 
+/********************************Products Section **/
+
+.product {
+  background: radial-gradient(var(--clr-outer, purple));
+  padding: 3em 0;
+  border-radius: 3em;
+  text-align: center;
+  margin-bottom: 3em;
+  @media (min-width: 45em) {
+    text-align: left;
+  }
+}
+
+.product_title {
+  font-size: 4rem;
+  color: rgba(#000, 0.2);
+  text-shadow: 0 0 0.2em rgba(#000, 0.2);
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.shoe-grey {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.shoe-brown {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-yellow {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}
+
+.product_img {
+  margin: -0.5em 0 0 0;
+  float: left;
+  width: 50%;
+  margin: 0 0 0 0;
+  /*shape-outside: url(.../imgs/shoe-1.png);*/
+  /*shape-margin: 1em;*/
+}
+
+.produt .btn {
+  text-align: center;
+}
+
+/****************************************************************End Product*/
+
 .section-title {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 30px; /* clamp(2.5rem, calc(5vw+1rem), 4rem);*/
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 3rem;
 }
 
 .hero {
+  color: white;
+  background-color: #222;
   text-align: center;
   padding: 15em 0;
+  background: #222;
+  @supports (background-blend-mode: multiply) {
+    background-image: url(../imgs/shoe-7.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  /** Not Using SAAS
+  @supports (property, value) {
+    .hero { **/
+  /*  }
+  }
+  */
+}
+
+.featured {
+  background: #eee;
+}
+
+.featured-item {
+  display: block;
+  position: relative;
+  transform: scale(0.85);
+  transition: 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.featured-item span {
+  display: block;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.featured-item:hover {
+  transform: scale(1);
+}
+
+.featured-item:focus {
+  transform: scale(1);
+}
+
+.featured-item:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 100% 100% 0 0;
+  border-radius: 50%;
+  background: #2193b0;
+  z-index: -1;
+}
+
+.featured_details span {
+  display: block;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+/*.featued_item:hover .featured_details,
+.featured_item:focus .featued_details {
+  opacity: 1;
+  text-shadow: 0 0 1em rgba(#fff, 1);
+} */
+
+.featued_details {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.hero {
+  --clr-accent: #faa700;
 }
