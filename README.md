@@ -2,4 +2,4 @@
 ##  few excercises, algorithms and projects
 
 ###no new commits
-## more practice
+## more practices
