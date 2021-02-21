@@ -1,0 +1,70 @@
+<div class="page-width">
+    {% if section.settings.title != blank %}
+      <div class="section-header text-center">
+        <h2>{{ section.settings.title | escape }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="grid">
+    {% for member in section.blocks %}
+      <div class="grid__item medium-up--one-half" style="margin-top: 30px;">
+        {% if member.settings.photo %}
+        {{ member.settings.photo |img_url: '300x' | img_tag}}
+        {% endif %}
+          <h3>{{memeber.settings.name}}</h3>
+          <span>{{memeber.settings.title}}</span>
+          <p>{{memeber.settings.bio}}</p>
+          </div>
+    {% endfor %}
+    </div>
+
+</div>
+    {% schema %}
+    {
+        "name" : "Team Members",
+        "class" : "team-members-section",
+        "settings": [
+        {
+            "id" : "title",
+            "type" : "text",
+            "label" : "Section Title",
+            "default": "Meet the team"
+        }
+        ],
+        "blocks":[
+        {
+            "id":"photo",
+            "type" : "image_picker",
+            "label": "Photo"
+        },
+        {
+            "name" : "Team Members",
+            "type": "staff-profile",
+            "settings": [
+                {
+                    "id" : "name",
+                    "type" : "text",
+                    "label":"Name"
+                },
+                {
+                    "id" : "title",
+                    "type" : "text",
+                    "label":"Job Title"
+                },
+                {
+                    "id" : "bio",
+                    "type" : "textarea",
+                    "label":"label"
+                },
+                ]
+            }
+        ],
+        "presets":[
+            {
+                "category" : "Custom Content",
+                "name": "Team Members"
+            }
+        ]
+    }
+    {% endschema %}
+    
