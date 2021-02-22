@@ -1,0 +1,26 @@
+{% assign collection = collection['featured-collection']%}
+{%- for product in collection.products -%}
+    {% include 'product-item'%}
+{%- else -%}
+  <p>no matches</p>
+{%- endfor -%}
+
+<!-- Invalid JSON in tag 'schema' but where is it below-->
+{% schema %}
+  {
+    "name": "Featured Collection",
+    "settings": [],
+    "presets": [
+        {
+            "category": "Custom Content",
+            "name": "Collection",
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
