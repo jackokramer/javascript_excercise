@@ -1,12 +1,36 @@
-{% assign collection = collection['featured-collection']%}
+{% assign collection =  collections[section.settings.collection]%}
+{%comment%}
+{{section.settings.collection}} - creates a featured collection
+{{collection}} -creates a product drop
+{%endcomment %}
 {%- for product in collection.products -%}
     {% include 'product-item'%}
 {%- else -%}
   <p>no matches</p>
 {%- endfor -%}
 
+{%- schema -%}
+  {
+    "name" : "Featured Collection",
+    "settings":[
+      {
+        "type" : "collection",
+        "id" : "collection",
+        "label" : "Collection"
+      }
+    ],
+    "presets":[
+    {
+    "category": "Custom Content",
+    "name": "Featured Collection"
+    }
+  ]
+  }
+{%- endschema -%}
+
 <!-- Invalid JSON in tag 'schema' but where is it below-->
-{% schema %}
+{% comment %}
+<!--{% schema %}
   {
     "name": "Featured Collection",
     "settings": [],
@@ -17,8 +41,8 @@
         }
     ]
   }
-{% endschema %}
-
+{% endschema %} -->
+{% endcomment %}
 {% stylesheet %}
 {% endstylesheet %}
 

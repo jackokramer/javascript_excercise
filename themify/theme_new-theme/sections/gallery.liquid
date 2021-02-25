@@ -1,0 +1,61 @@
+<div class="gallery">
+    {%for block in section.blocks %}
+    <div class="image-wrap">
+</div>
+    {% endfor %}
+</div>
+
+{% schema %}
+      {
+        "name": "Gallery",
+        "settings": [
+        {
+            "type": "select",
+            "id": "per-row",
+            "label": "Images per row",
+            "options": [
+              {
+                "value": "50%",
+                "label": "2 per row",
+              },
+              {
+                "value": "33%",
+                "label": "3 per row",
+              },
+              {
+                "value": "25%",
+                "label": "4 per row",
+              }
+            ],
+            "default": "value",
+            "info": "text"
+         }
+         
+        ],
+        "blocks": [
+        {
+            "type": "image",
+            "name": "Image Block",
+            "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "image"
+              }
+            ]
+        }
+        ]
+      }
+{% endschema %}
+
+{% style %}
+      .image_wrap:{
+          display: inline-block;
+          width: 33%;
+            height:500px;
+        background-size: cover;
+      }
+{% endstyle %}
+
+{% javascript %}
+{% endjavascript %}

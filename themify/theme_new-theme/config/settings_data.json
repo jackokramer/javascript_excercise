@@ -1,5 +1,35 @@
 {
-  "current": "Default",
+  "current": {
+    "link-color": "#5dc937",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "collection-template":
+      {"type": "collection-template",
+        "settings": {
+          "pagination": 5
+        }
+      },
+
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      },
+            "156843681968": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "featured-collection"
+        }
+      }
+    },
+    "content_for_index": [
+	"156843681968"
+    ]
+  },
   "presets": {
     "Default": {
     }
