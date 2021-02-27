@@ -1,7 +1,14 @@
 <div class="gallery">
     {%for block in section.blocks %}
+    {% if block.type == "image"%}
     <div class="image-wrap">
 </div>
+{%endif%}
+{% if block.type == "video"%}
+  {% comment%}
+  youtube embed link and vimeo embed link with if else statements
+  {% endcomment%}
+{% endif %}
     {% endfor %}
 </div>
 
@@ -25,12 +32,34 @@
               {
                 "value": "25%",
                 "label": "4 per row",
+              },
+              {
+                "value": "20%",
+                "label": "5 per row",
               }
             ],
-            "default": "value",
-            "info": "text"
-         }
-         
+            "default": "33%"
+         },
+         {
+          "type": "select",
+          "id": "height",
+          "label": "Image Height",
+          "options": [
+            {
+              "value": "300px",
+              "label": "300px"
+            },
+            {
+              "value": "400px",
+              "label": "400px"
+            },
+            {
+              "value": "500px",
+              "label": "500px"
+            }
+          ],
+          "default": "500px",
+       }   
         ],
         "blocks": [
         {
@@ -43,16 +72,33 @@
                 "label": "image"
               }
             ]
+        },
+        {
+          "type": "video",
+          "name": "Video Block",
+          "settings": [
+          {
+              "type": "video_url",
+              "id": "video_url",
+              "label": "Video URL",
+              "accept": ["youtube", "vimeo"]
+            }
+          ]
+      }
+        ],
+        "presets":[
+        {
+          "category": "Custom Content",
+          "name": "Gallery",
         }
         ]
       }
 {% endschema %}
-
 {% style %}
-      .image_wrap:{
+      .image_wrap, iframe:{
           display: inline-block;
-          width: 33%;
-            height:500px;
+          width: {{section.settings.per-row}};
+          height: {{section.settings.height}};
         background-size: cover;
       }
 {% endstyle %}
