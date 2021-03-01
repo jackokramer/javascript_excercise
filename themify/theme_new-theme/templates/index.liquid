@@ -1,1 +1,38 @@
 {{ content_for_index }}
+
+{% for product in collections.frontpage.products limit:4 %}
+  <div>
+    <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+    {{ product.price | money }}
+    {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+    <a href="{{ product.url | within: collection }}">
+      <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+    </a>
+  </div>
+{% endfor %}
+
+
+<h2>String Concatination</h2>
+
+{%assign firstName = "Jack"%}
+{% assign lastName= "Kramer"%}
+
+{% capture full_name %}
+{{first_name}}{{last_name}}
+{% endcapture %}
+
+Full ame: {{full_name}}
+
+<!--Substrings-->
+<h2>String Concatination</h2>
+
+{%assign youtube_video_url="https://www.youtube.com/watch?v=Emulp255uP8"%}
+	{%if youtube_video_url contains 'youtube.com/watch' %}
+  {% assign video_id = youtube_video_url | split 'v=' %}
+    {% if youtube_video_url contains '&'%}
+        {%assign video_id = video_id[1] | split: '&' | first%}
+    {% else %}
+        {% assign video_id = video_id[1]%}
+    {% endif %}
+    <iframe src="//www.youtube.com/embed/{{ video_id }}">
+{% endif %}
