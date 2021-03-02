@@ -36,3 +36,38 @@ Full ame: {{full_name}}
     {% endif %}
     <iframe src="//www.youtube.com/embed/{{ video_id }}">
 {% endif %}
+
+<!-- Creating an array of Objects-->
+<!---
+Shopify liquid does not allow for making objects, neither can you create an array of objects. You can however make arrays of strings and numbers as well as arrays of stromh arrays using capture.
+----->
+
+<h2>Array of 'Objects'</h2>
+{% assign collection = collections['featured-collection']%}
+{% assign collection2 = collections['example-collection']%}
+
+{% assign collection_array = colllection.collection2%}
+
+{% capture product_list %}
+  {% for product in collection.products%}
+  {{product.title}}|{{product.url}}|{{product.description}}|{{product.featured_img.src| product_img_url: 'medium'}}
+  {% if forloop.last == fasle%}::{{% endif %}}
+  {% endif %}
+  {%endfor%}
+{% endcapture %}
+
+  {% assign products_array = products_list | split: '::' %}
+  {% for product in products_array %}
+    {% assign product_vals = product | split: '|' %}
+      {{product_vals[0]}}
+      {{product_vals[2]}}
+  {% endfor %}
+
+  {% assign itemsArray = "item1#item2" | split: '#' %}
+  {% assign colorsArray = "blue#green" | split: '#' %}
+
+  {%- for item in itemsArray-%}
+  {%- if item == "item1"-%}
+    {{ colorsArray [forloop.index0] }}
+    {%- endif -%}
+  {%- endfor -%}
