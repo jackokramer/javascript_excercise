@@ -11,6 +11,8 @@
   </div>
 {% endfor %}
 
+<!--YOu can create a boolean but you can't assign the result of a comparison to a variable-->
+
 
 <h2>String Concatination</h2>
 
@@ -21,7 +23,7 @@
 {{first_name}}{{last_name}}
 {% endcapture %}
 
-Full ame: {{full_name}}
+Full name: {{full_name}}
 
 <!--Substrings-->
 <h2>String Concatination</h2>
@@ -71,3 +73,44 @@ Shopify liquid does not allow for making objects, neither can you create an arra
     {{ colorsArray [forloop.index0] }}
     {%- endif -%}
   {%- endfor -%}
+
+ 
+  <!--Creating booleans-->
+
+  {%assign true_false = false %}
+{% if "hello" == "hello"%}
+      {% assign true_false = true%}
+   {% endif %}
+  {% if true_false%}
+   hello does equal hello
+   {% else %}
+    hello does not equal
+  {% endif %}
+
+<!--Order of operations-->
+{%assign average_price = 50 | plus: 20 | plus: 30 | divided_by: 3%}
+{{average_price}}
+
+<!-- Price of a shirt  2 times 15 -->
+
+{% assign price = 8 | times: 2 | plus: 10 | minus: 5 | divided_by:2 %}
+{{cost}}
+<br>
+{% assign cost_of_shirts = 0 | times: 2%}
+{% assign cost_of_shorts = 20 | minus: 2 | times: 2%}
+{% assign const = cost_of_shirts | plus:  cost_of_shorts |%}
+{{cost}}
+
+<!--Empty drops-->
+{% assign page = page['does not exist']%}
+<!-- A drop is just an object-->
+
+{{page}}
+<br>
+{{collection}}
+
+{% if customer %}
+<h2>Customer</h2>
+{% else %}
+<h2>Customer not logged in</h2>
+{% endif %}
