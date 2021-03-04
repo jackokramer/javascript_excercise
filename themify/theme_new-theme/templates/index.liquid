@@ -1,5 +1,29 @@
 {{ content_for_index }}
 
+<div id="content">
+</div>
+
+{{"https://code.jquery.com/jquery-3.5.1.min.js" | script_tag}}
+
+<script>
+  const query =  `{
+    shop {
+      name
+    }
+  }`;
+
+  function apiCall(query)({
+    return fetch('api/graphql.json', {
+               "Access-Control-origin": "*",
+               "X-Shopify-Storefront-Access-Token": "6955bbf33f9a06773e73f89150f5052c"
+  },
+    "body": query
+  }).then(response=>response.json());
+  }
+  apiCall(query).then(response=>console.log(response);
+  console.log(response)
+</script>
+
 {% for product in collections.frontpage.products limit:4 %}
   <div>
     <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
