@@ -13,23 +13,7 @@
       "da": "Farver",
       "de": "Farben",
       "en": "Colors",
-      "es": "Colores",
-      "fi": "Värit",
-      "fr": "Couleurs",
-      "it": "Colori",
-      "ja": "色",
-      "ko": "색상",
-      "nb": "Farger",
-      "nl": "Kleuren",
-      "pl": "Kolory",
-      "pt-BR": "Cores",
-      "pt-PT": "Cores",
-      "sv": "Färger",
-      "th": "สี",
-      "tr": "Renkler",
-      "vi": "Màu",
-      "zh-CN": "颜色",
-      "zh-TW": "色彩"
+      "es": "Colores"
     },
     "settings": [
       {
@@ -38,24 +22,7 @@
           "cs": "Text",
           "da": "Tekst",
           "de": "Text",
-          "en": "Text",
-          "es": "Texto",
-          "fi": "Teksti",
-          "fr": "Texte",
-          "it": "Testo",
-          "ja": "テキスト",
-          "ko": "텍스트",
-          "nb": "Tekst",
-          "nl": "Tekst",
-          "pl": "Tekst",
-          "pt-BR": "Texto",
-          "pt-PT": "Texto",
-          "sv": "Text",
-          "th": "ข้อความ",
-          "tr": "Metin",
-          "vi": "Văn bản",
-          "zh-CN": "文本",
-          "zh-TW": "文字"
+          "en": "Text"
         }
       },
       {
