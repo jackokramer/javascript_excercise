@@ -1,0 +1,29 @@
+body{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.625rem;
+    color:#232323;
+    margin: 0;
+}
+
+.container{
+    padding: 0 2rem;
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+article{
+    margin: 2em 0;
+    padding: 2em 0;
+    box-shadow: 0 0 2rem 0 5rem rgba(0,0,0);
+}
+
+.soup-image{
+    width: 250px;
+}
+
+
+.plant-hero{
+    background: #e6ffe0;
+    padding: 5rem 0 0;
+}
