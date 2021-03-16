@@ -1,0 +1,69 @@
+<div class="page-width">
+    {% if section.settings.title != blank %}
+      <div class="section-header text-center">
+        <h2>{{ section.settings.title | escape }}</h2>
+      </div>
+    {% endif %}
+    <div class="grid">
+    {% for memeber in section.blocks%}
+      <div class="grid__item medium-up--one-half" style="margin-top: 15px; margin-bottom: 15px;">
+        {% if memeber.settings.photo %}
+        {{memeber.settings.photo |img_url: '300x' | img_tag}}
+        {% endif %}
+        <img src="" alt="">
+          <h3>{{memeber.settings.name}}</h3>
+          <span>{{memeber.settings.title}}</span>
+          <p>{{memeber.settings.bio}}</p>
+      </div>
+    {% endfor %}
+    </div>  
+</div>
+
+{% schema %}
+{
+    "name":"Staff",
+    "class": "team-members-section",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "section title",
+            "default": "Meet Our Team"
+        }
+    ],
+    "blocks":[
+    {
+           "name": "Team Memeber",
+           "type": "staff-profile",
+           "settings": [
+           {
+               "id": "photo",
+               "type": "image_picker",
+               "label": "Photo"
+           },
+           {
+            "id": "name",
+            "type": "text",
+            "label": "Name"
+        },
+        {
+            "id": "title",
+            "type": "text",
+            "label": "Job-Title"
+        },
+        {
+            "id":"bio",
+            "type": "textarea",
+            "label": "Bio"
+        }
+           ]
+        }
+    ],
+        "presets": [
+          {
+            "category": "Store Information",
+            "name": "Team Memebers"
+          }
+        ]
+}
+{% endschema %}
