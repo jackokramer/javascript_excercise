@@ -1,0 +1,102 @@
+.even-columns{
+    gap: 1em;
+    display: flex;
+}
+
+.even-columns > *{
+    flex-basis: 100%;
+}
+/*Creates a flex where all columns are the same size in the codea above by using the appropriate selector*/
+
+.grid-ish{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.grid-ish > *{
+    flex: 1 1 10em;
+}
+
+.content-sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-sidebar > *:nth-child(1){
+    flex: 1 1 70%;
+}
+
+.content-sidebar > *:nth-child(2){
+    flex: 1 1 30%;
+    min-width: 25ch;
+}
+
+:root{
+    -ff-primary: basic-sans, sans-serif;
+    --clr-primary:#ee6352;
+    --clr-body: #333;
+    --clr-bg: #ddd;
+    --spacer:1rem;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+
+.flow > * +* {
+    margin-top: var(--flow-space, var(--spacer))
+}
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.content{
+    width: 70vw;
+    margin: 3rem auto;
+    padding: 2em;
+    box-shadow: 0 0 3rem rgba(0,0,0, 0.3);
+    background: white;
+}
+
+.col{
+    padding: 3em;
+    background: 0 0 2em rgba(0,0,0, 0.3em);
+    border: 3px solid rgba(0,0,0, 0.2);
+}
+
+.title{
+    font-weight: 900;
+    color: var(--clr-primary);
+    text-align: center;
+    margin: 10px;
+}
+
+.container{
+    margin: 0 10px;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.card{
+    font-size: 0.925rem;
+    padding: 2em;
+    margin: 1em;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
