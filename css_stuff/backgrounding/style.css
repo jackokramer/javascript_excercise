@@ -1,0 +1,105 @@
+:root{
+    --ff-primary: basic-sans, sans-serif;
+    --clr-primary: #ee6352;
+    --clr-body: #333;
+    --clr-bg: #ddd;
+    --spacer: 1rem;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: turquoise;
+    background-image: url(../img/just-waves.png)
+}
+h1{
+    font-size: 70px;
+    color: #3747b3;
+    text-align: center;
+}
+
+p{
+    color:#2f4c5c;
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+ul{
+    display: inline-block;
+    text-decoration: none;
+}
+
+/**Classes **/
+
+.box{
+    background: pink;
+    background-image: url(../img/swim.jpeg);
+    padding: 200px 100px;
+    margin: 100px;
+    background-repeat: repeat-x;
+    box-shadow: 1px;
+    background-size: contain;
+    background-position: center;
+}
+
+.card{
+    text-align: right;
+    background-image: url(../img/wave1.jpeg);
+    padding: 200px;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+
+.col{
+    padding: 3em;
+    background: 0 0  3rem rgba(0,0,0,0.3);
+    background: 3px solid rgba(0,0,0,0..2);
+}
+
+.container{
+    margin: 0 10px;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.content{
+    width: 70vw;
+    margin: 3rem auto;
+    box-shadow: 0 0 3rem rgba(0,0,0, 0.3);
+    background: white;
+}
+.content-sidebar{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.content-sidebar > *:nth-child(1){
+    flex: 1 1 70%;
+    min-width:25ch
+}
+.content-sidebar > *:nth-child(2){
+    flex: 1 1 25%;
+}
+
+
+.even-columns{
+    display: flex;
+    gap: 1em;
+}
+.even-columns > * {
+    flex-basis: 100%;
+}
+
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+}
