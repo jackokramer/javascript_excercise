@@ -12,6 +12,13 @@
     box-sizing: border-box;
 }
 
+a{
+    display: block;
+    padding: 8px;
+    background-color: #ee6352;
+    text-decoration: none;
+}
+
 body{
     background-color: turquoise;
     background-image: url(../img/just-waves.png)
@@ -31,9 +38,33 @@ h2{
     font-weight: 700;
 }
 
+li{
+    display: inline;
+    float: left;
+    border-right: 1px solid #bbb;
+
+}
+
+li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: inline-block;
     text-decoration: none;
+    background-color: #dddddd;
+    overflow: hidden;
 }
 
 /**Classes **/
