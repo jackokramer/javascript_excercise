@@ -11,6 +11,9 @@
     box-sizing: border-box
 }
 
+h1, h2, h3, p {
+    margin: 0;
+  }
 body{
     font-family: var(--ff-primary);
     min-height: 100vh;
@@ -23,6 +26,10 @@ body{
     margin: auto 0;
 }
 
+a {
+    color: var(--clr-primary);
+  }
+
 /**Classes**/
 .title{
     color:var(--clr-primary);
@@ -33,9 +40,63 @@ body{
 
 .bg-image{
     padding: 20em;
-    background-size: 100%;
-    background-image: url("https://assets.codepen.io/308367/home-gym.jpg");
-    background-repeat: no-repeat;
+    background-size: auto, 10%%;
+    background-image: 
+    url("https://assets.codepen.io/308367/home-gym.jpg"), 
+    url("https://assets.codepen.io/308367/f47b1-bandeirinha-azul-e-branca-png.png");
+    background-repeat: no-repeat, repeat;
     outline: 2px solid black;
     background-position:  10%;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows:  15rem;
+
+    & > * {
+        display: grid-column;
+        place-items: center;
+        outline: 2px solid red;
+    & > * {
+        padding: .25em .75em;
+        border-radius: .25em;
+        background: rgba(0,0,0,.75);
+        color: #fff;
+        letter-spacing: 1px;
+          }
+    }
+}
+
+[class*="bg-"]{
+    background-image: url("https://assets.codepen.io/308367/house.jpg");
+    background-size: cover;
+}
+
+.bg-1{
+    background-position:  top left;
+}
+.bg-2{
+    background-position: top center;
+}
+.bg-3{
+    background-position: top right;
+}
+.bg-4{
+    background-position: center left;
+}
+.bg-5{
+    background-position: center center;
+}
+.bg-6{
+    background-position: center right;
+}
+.bg-7{
+    background-position: bottom left;
+}
+.bg-8{
+    background-position: bottom center;
+}
+.bg-9{
+    background-position: bottom right;
 }
