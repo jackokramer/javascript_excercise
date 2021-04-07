@@ -1,0 +1,41 @@
+:root{
+    --ff-primary: basic-sans, sans-serif;
+    --clr-primary: #ee6352;
+    --clr-body: #ddd;
+    --spacer: 1rem;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box
+}
+
+body{
+    font-family: var(--ff-primary);
+    min-height: 100vh;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: var(--clr-body);
+    background: var(--clr-bg);
+    padding:3rem;
+    text-align:center;
+    margin: auto 0;
+}
+
+/**Classes**/
+.title{
+    color:var(--clr-primary);
+    font-weight:900;
+    line-height:.8;
+    margin-bottom: 1em;
+}
+
+.bg-image{
+    padding: 20em;
+    background-size: 100%;
+    background-image: url("https://assets.codepen.io/308367/home-gym.jpg");
+    background-repeat: no-repeat;
+    outline: 2px solid black;
+    background-position:  10%;
+}
