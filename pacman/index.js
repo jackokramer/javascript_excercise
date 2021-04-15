@@ -17,6 +17,11 @@ let world  = [
     [2,2,2,2,2,2,2,2,2,2],
 ]
 
+let pacman = {
+    x: 40,
+    y: 40
+}
+
 function displayWorld(){
     let output = '';
     for(let x = 0; x< world.length; x++){
@@ -36,4 +41,30 @@ function displayWorld(){
     
 }//iterate through world
 
-displayWorld()
+function displayPacman(){
+    document.getElementById('pacman').style.top =pacman.y+"px";
+    document.getElementById('pacman').style.left =pacman.x+"px";
+}
+
+displayWorld();
+
+document.onkeydown = function(e){
+    if(e.keyCode == 37){
+        pacman.x--;
+    }
+    else if(e.keyCode==39){
+        pacman.x++;
+    }
+    else if(e.keyCode==38){
+        pacman.y -=20;
+    }
+    else if(e.keyCode = 40){
+        pacman.y +=20;
+    }
+    if(world[pacman.y][pacman.x] ==1){
+        world[pacman.y][pacman.x] = 0;
+        displayWorld();
+    }
+    //console.log(e.keyCode);
+    displayWorld();
+}
