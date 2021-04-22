@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
+    <title>tailwind CSS demo</title>
+</head>
+<body>
+    <form action="/test" method="post" class="w-1/2 mx-auto mt-10 text-center">
+        <p>
+            <label for="block mb-3">First Name</label>
+            <input type="text" class="w-full p-2 mb-3 border border-grey-400 border-solid" name="first_name" placeholder="first_name" required>
+        </p>
+        <p>
+            <label for="block mb-3">Last Name</label>
+            <input type="text" class="w-full p-2 mb-3 border border-grey-400 border-solid" name="last_name" placeholder="last_name" required>
+        </p>
+        <p>
+            <label for="block mb-3">Email</label>
+            <input type="text" class="w-full p-2 mb-3 border border-grey-400 border-solid" placeholder="email" name="email">
+        </p>
+        <p>
+            <label for="block mb-3">Blog URL</label>
+            <input type="text" class="w-full p-2 mb-3 border border-grey-400 border-solid" name="first_name" required placeholder="https://www.example.com">
+        </p>
+        <p>
+            <label class="block mb-3">Notes</label>
+            <textarea
+              class="w-full p-3 border border-gray-400"
+              rows="3"
+              placeholder="Anything you want to tell us!"
+            ></textarea>
+          </p>
+        <p>
+            <button class="p-3 pl-5 pr-5 mt-5 text-white bg-green-500 rounder-lg" type="submit">Save</button>
+        </p>
+    </form>
+</body>
+</html>
