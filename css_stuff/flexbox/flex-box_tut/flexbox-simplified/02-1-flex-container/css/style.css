@@ -3,7 +3,11 @@
   max-width: 60rem;
   border: 5px solid #000;
   padding: 2em;
-  display: flex;
+  display: inline-flex; 
+  /* INline block outer display values change other values around it 
+  flex focuses on the inner values
+  inline-flex
+  */
 }
 
 .flex-item {
