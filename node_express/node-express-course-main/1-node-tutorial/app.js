@@ -1,9 +1,10 @@
-//global - NO WINDOW!!!!!!!! -there is no browser
+//manual  approach(create package.json in the root, create properties etc)
+// npm init (step by step, press enter to skip)
+//npm init -y (everything default)
 
-//__dirname     - path to the current directory
-//__filename    - file name
-// require      - function to use module (CommonJS)
-// module       - info about the current moule(file)
-// process      - infor about env where the program is being excecuted.
+const _= require('lodash');
 
-console.log('Welcome to Node Tutorial')
+const items = [1, [2, [3, [4]]]]
+
+const newItems = _.flattenDeep(items);
+console.log(newItems);

@@ -32,3 +32,26 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(5000)
+/*
+const http = require('http')
+
+const server = http.createServer((req, res)=>{
+    //req = request
+    //resolve
+    console.log(req)
+    if(req.url === '/'){
+    res.end('Welcome to our home Page!')
+  }
+  else if(req.url === '/about'){
+      res.end('here is our short history')
+  } else{
+  res.end(`
+      <h1>Oops page does not exist</h1>
+      <p>Can't seem to find the page</p>
+      <a href="/"> back home</a>
+  `)
+    }
+})
+
+server.listen(5001)
+*/
