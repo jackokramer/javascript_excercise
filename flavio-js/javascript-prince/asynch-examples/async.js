@@ -9,7 +9,7 @@ console.log('after')
 const doSomething = callback => {
     //do things
     const result = 'test'
-    callback(result)
+    //callback(result)
 }
 
 console.log(doSomething)
@@ -59,4 +59,18 @@ doSomething(result => {
       }
     
     }) ()
+
+    const doSomethingAsync = () =>{
+        return new Promise(resolve => {
+          setTimeout(()=> resolve('I did soemthing'), 3000)
+        })
+      }
+      
+      const doSomethingNew = async () => {
+        console.log(await doSomethingAysnc())
+        }
+      
+      console.log('before')
+      doSomething()
+      console.log('after')
 
