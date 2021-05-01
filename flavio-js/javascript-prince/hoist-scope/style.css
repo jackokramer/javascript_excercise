@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: center;
+}
+
+input{
+    width: 50%;
+    text-align: center;
+}
+
+button{
+    display: block;
+    background: white;
+    color: #ccc;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+{}
