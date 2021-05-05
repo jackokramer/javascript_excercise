@@ -13,3 +13,27 @@ button{
     cursor: pointer;
     background-color: #2274A5;
 }
+
+#bestbutton{
+    border: 20px solid #000;
+    margin: 30px;
+    padding:30px;
+    color: white;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    background-color: #2274A5;
+}
+
+.anormalbutt{
+    border: 20px solid #000;
+    margin: 30px;
+    padding:30px;
+    color: white;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    background-color: #2274A5;
+}
+
+

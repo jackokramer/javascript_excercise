@@ -1,0 +1,119 @@
+:root{
+    --clr-main: hsl(320 100% 58%);
+    --clr-secondary: hsl(402 90% 75%);
+}
+
+
+/**Classes**/
+.container{
+    
+}
+.logo{
+
+}
+
+.nav{
+
+}
+.nav-toggle{
+
+}
+
+.nav__list{
+
+}
+
+.nav__item{
+
+}
+
+/** Intro Section**/
+.intro{
+}
+.section__title section__title--intro{
+
+}
+
+.section__subtitle section__subtitle--intro{
+
+}
+
+/**Services **/
+.my-services{
+
+}
+
+.section__title section__title--services{
+
+}
+
+.services{
+
+}
+
+.service{
+    
+}
+
+.btn{
+
+}
+
+/**About Me **/
+
+.about-me{
+
+}
+.section__title section__title--about{
+
+}
+
+.section__subtitle section__subtitle--about{
+
+}
+
+/**My Work**/
+.my-work{
+ 
+}
+.section__title section__title--my-work{
+
+}
+
+/**Portfolio**/
+.portfolio{
+
+}
+
+.portfolio__item{
+
+}
+
+/**Footer**/
+
+.footer__link{
+
+}
+.social-list{
+
+}
+.social-list__item{
+
+}
+.social-list__link{
+    
+}
+
+/** IDs**/
+
+#home{
+
+}
+
+#services{
+
+}
+
+#about{
+
+}
