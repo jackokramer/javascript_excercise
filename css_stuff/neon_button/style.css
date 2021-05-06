@@ -56,6 +56,7 @@ body{
     background: var(--clr-neon);
     color: var(--clr-bg);
     text-shadow: none;
+    transform: scale(1.1);
 }
 
 .neon-button:after{
