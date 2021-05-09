@@ -70,6 +70,10 @@
 
 /**General Styles **/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -517,4 +521,27 @@ header{
 
 #about{
 
+}
+
+/**projects.html**/
+
+.tech-stack{
+    padding-top: 20px;
+}
+
+.music{
+    margin: 0 auto;
+
+}
+
+.portfolio--item-ind{
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio--item-ind p{
+ max-width: 800px;
+ margin-left: auto;
+ margin-right: auto;
 }
