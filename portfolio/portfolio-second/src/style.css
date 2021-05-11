@@ -7,14 +7,15 @@ body{
 }
 
 div{
-    height:500px;
     /*border: solid black 1px;*/
     margin: 0 auto;
 }
 
 footer{
-    height: 500px;
+    padding: 80px;
     background-color: #000;
+    color: #fff;
+    text-align: center;
 }
 
 li{
@@ -44,15 +45,30 @@ h1{
     font-size: 90px;
     margin: 0;
 }
+h2{
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+}
+
 
 p{
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
 svg{
     padding: 10px;
+}
+
+h3{
+    text-align: center;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /**classes**/
@@ -123,4 +139,76 @@ svg{
 
 .social{
     margin: 10px;
+}
+
+.sub-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.sub-section-alternate{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+.my-biz{
+
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+.headshot{
+    padding: 20px;
+    width: 300px;
+    border-radius:150px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card{
+    width: 240px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgb(187, 187, 187);
+}
+
+.proj-title{
+    text-align:center;
+}
+
+
+
+.project-image{
+    margin-bottom: 10px;
+    margin-top: 25px;;
+    width: 250px;
+    height: 200px;
+    border-radius: 150px
+}
+
+.subtext{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight:200; 
+    text-align: center;
+}
+
+.project-link{
+    text-decoration: none;
+    color: #ef744b;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.contact-title{
+    color: #fff;
 }
