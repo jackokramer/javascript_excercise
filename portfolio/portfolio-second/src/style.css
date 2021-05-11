@@ -36,6 +36,10 @@ ul{
     font-size: 30px;
 }
 
+ul.show{
+    display: block;
+}
+
 a{
     text-decoration: none;
     color: #fff;
@@ -168,16 +172,23 @@ hr{
     border-radius:150px;
 }
 
+.project-card{
+    width: 250px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgb(187, 187, 187);
+}
+
 .project-container{
     display: flex;
     justify-content: space-around;
 }
 
-.project-card{
-    width: 240px;
-    height: 500px;
-    margin: 20px;
-    box-shadow: 2px 2px 5px rgb(187, 187, 187);
+@media only screen and(max-width: 1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .proj-title{
@@ -187,7 +198,6 @@ hr{
 
 
 .project-image{
-    margin-bottom: 10px;
     margin-top: 25px;;
     width: 250px;
     height: 200px;
@@ -211,4 +221,39 @@ hr{
 
 .contact-title{
     color: #fff;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width:1000px){
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: #fff;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    ul{
+        display:none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+    ul.show{
+        display: block;
+    }
+    nav{
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .logo{
+        display:none;
+    }
 }
