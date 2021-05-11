@@ -1,0 +1,3 @@
+[submodule "scrimba.javascript_advent"]
+	path = scrimba.javascript_advent
+	url = https://github.com/jackokramer/javascript_excercise

@@ -148,7 +148,7 @@ hr{
 .sub-section{
     display: flex;
     justify-content: space-between;
-    padding: 80px;
+    padding: 120px;
 }
 
 .sub-section-alternate{
