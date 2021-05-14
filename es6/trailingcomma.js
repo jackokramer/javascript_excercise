@@ -1,8 +1,0 @@
-function add(param1,){
-    const example ={
-        name:"jack",
-    }
-    console.log(example)
-}
-
-add(2);
