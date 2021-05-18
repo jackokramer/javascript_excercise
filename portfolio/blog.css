@@ -230,6 +230,7 @@ body {
   border-radius: 0.5rem;
   display: inline-block;
   align-items: center;
+  z-index: 10px;
   /* overflow: hidden; */
 
   transition: transform 500ms ease;
@@ -270,6 +271,11 @@ body {
 .card:focus-within .card-content > *:not(.title) {
   opacity: 1;
   transition-delay: 100ms;
+}
+
+.card a {
+  text-decoration: none;
+  color: rgb(241, 241, 240);
 }
 
 .card:hover .card-content > * {
