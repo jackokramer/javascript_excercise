@@ -11,11 +11,13 @@
   --ff-font-weight-bold: 900;
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #ff7b00;
+  --clr-turq: #16e0bd;
   --clr-neon: hsl(317 100% 54%);
   --clr-bg: hsl(323 21% 16%);
 
   --fw-reg: 300;
+  --fw-heavier: 500;
   --fw-bold: 900;
 
   --fs-h1: 3rem;
@@ -265,7 +267,7 @@ header {
 
 /**Services **/
 .my-services {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-turq);
   background-image: url(../img/waterdrop.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -291,6 +293,10 @@ header {
 .service {
   max-width: 500px;
   margin: 0 auto;
+}
+.service p {
+  font-weight: var(--fw-bold);
+  color: rgb(246, 251, 255);
 }
 @media (min-width: 800px) {
   .services {
@@ -511,7 +517,16 @@ header {
 /**projects.html**/
 
 .tech-stack {
+  background-color: var(--clr-accent-dark);
   padding-top: 20px;
+}
+
+.even-columns {
+  display: flex;
+}
+
+.even-columns > * {
+  flex-basis: 100%;
 }
 
 .music {

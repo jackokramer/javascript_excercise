@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,12 +34,11 @@
     </header>
     <div class="wrapper">
         <h2>My Projects</h2>
-        <p>Here are a few projects I've  built in the past on in the past. The plan is to push them all live by the end of the year.</p>
-        <p>In the mean time I'll link them to my github repository</p>
+        <p class="info">Here are a few projects I've  built in the past on in the past. The plan is to push them all live by the end of the year.</p> <p class="info">In the mean time I'll link them to my github repository. Feel free to take a look and see my work</p>
         <div class="card">
             <div class="card-content">
                 <h2 class="title">Ruby for Friends</h2>
-                <p class="card-body">A friend linker app built on Ruby on Rails.</p>
+                <p class="card-body">A friend linker app built on Ruby on Rails. Similar to Facebook and Myspace. There's a posting board and an upload attachments field</p>
                 <a href="#" class="button">Learn More</a>
             </div>
         </div>
@@ -48,15 +46,45 @@
             <div class="card-content">
                 <h2 class="title">Jam With Friends</h2>
                 <p class="card-body"> A protoype site I built at Coding Dojo with <a href="https://www.linkedin.com/in/josholksprofile/">Josh Olk</a> that will help college students find others with similar music tastes and help find rehersal spaces to play music and collaborate.</p>
-                <p>The app also offers spotlights for local music shops for students to pick up equipment </p>
                 <a href="https://github.com/jackokramer/jam_with_friendz" class="button">Learn More</a>
             </div>
         </div>
         <div class="card">
             <div class="card-content">
                 <h2 class="title">Basic Ecommerce Site</h2>
-                <p class="card-body">A basic ecommerce site template buit purely on Python (Django framework), MySQL and bootstrap as the stylzing language.</p>
+                <p class="card-body">A basic ecommerce site template buit purely on Python (Django framework), MySQL and bootstrap as the stylzing language. One can make a purchase return an item and fill out dummy info via a stripe call.</p>
                 <a href="#" class="button">Learn More</a>
+            </div>
+        </div>
+        <p class="last-bit">Just to note these are protoype sites that have an emphasis on creating full stack CRUD Applications that can be applied later</p>
+    </div>
+
+    <div class="flexy-content-sidebar">
+        <div class="floaty">
+            <img src="img/waves.jpeg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque natus expedita modi illo, omnis excepturi tenetur in qui quisquam voluptates odio, labore vel ipsam reiciendis. Sapiente fugiat nesciunt pariatur. Tempora!</p>
+        </div>
+        <div class="photo">
+            <img src="img/khrung.jpg" alt="">
+            <p>Khrungbin in all their glory. When live music was a thing</p>
+            <img src="img/queens.JPG" alt="Josh Homme">
+            <p>Queens of the Stoneage circa 2018</p>
+        </div>
+    </div>
+
+    <div class="video-player">
+        <div class="player">
+            <video class="player__video viewer" src="khrung.MOV"></video>
+
+            <div class="player__controls">
+                <div class="progress">
+                    <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">►</button>
+                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+                <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
             </div>
         </div>
     </div>
