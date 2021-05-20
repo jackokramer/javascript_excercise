@@ -77,7 +77,7 @@ html {
 }
 
 body {
-  background: var(--clr-light);
+  background: var(--clr-dark);
   color: var(--clr-dark);
   margin: 0 auto;
   font-family: var(--ff-primary);
@@ -118,6 +118,7 @@ section {
 
 .section__title--intro {
   font-weight: var(--ff-font-weight-reg);
+  color: #fff;
 }
 
 .section__title--intro strong {
@@ -260,6 +261,7 @@ header {
   box-shadow: var(--bs);
 }
 .section__title section__title--intro {
+  color: var(--clr-light);
 }
 
 .section__subtitle section__subtitle--intro {
@@ -381,6 +383,13 @@ header {
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
+}
+.who-i-am {
+  color: var(--clr-light);
+}
+
+.about-me__body {
+  color: var(--clr-light);
 }
 
 @media (min-width: 600px) {
@@ -521,8 +530,20 @@ header {
   padding-top: 20px;
 }
 
+.tech-stack,
+h2 {
+  color: var(--clr-light);
+}
+
 .even-columns {
   display: flex;
+  color: var(--clr-light);
+}
+
+.even-columns,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 .even-columns > * {
@@ -543,6 +564,7 @@ header {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  color: var(--clr-light);
 }
 
 /* blog styling */
