@@ -1,0 +1,54 @@
+//Biggie Size - Given an array, write a function that changes all positive numbers in the array to the string "big".  Example: makeItBig([-1,3,5,-5]) returns that same array, changed to [-1, "big", "big", -5].
+
+function biggieSize(arr){
+    for(let x = 0; arr.length>x; x++){
+        if(arr[x]>0){
+            arr[x] = 'biggie smalls'
+        }
+}
+    return arr
+}
+
+//Print Low, Return High - Create a function that takes in an array of numbers.  The function should print the lowest value in the array, and return the highest value in the array.
+
+function printLow(arr){
+    let low = arr[0] // added variables to log them  and return them properly.
+    let high = arr.length-1
+    console.log(low)
+    return high
+    }
+
+// Print One, Return Another - Build a function that takes in an array of numbers.  The function should print the second-to-last value in the array, and return the first odd value in the array.
+
+function printOne(arr){
+    let second = arr.length-2
+        console.log(second)
+    for(let x = 0; arr.length>x; x++){
+        if(arr[x]%2===1){
+            return arr
+        }
+    }
+}
+
+//Double Vision - Given an array (similar to saying 'takes in an array'), create a function that returns a new array where each value in the original array has been doubled.  Calling double([1,2,3]) should return [2,4,6] without changing the original array.
+
+function doubleVis(arr){
+    let double  = 0;
+    for(let x = 0; arr.length>x; x++){
+       double = arr[x]*2
+    }
+    return double
+}
+
+//Count Positives - Given an array of numbers, create a function to replace the last value with the number of positive values found in the array.  Example, countPositives([-1,1,1,1]) changes the original array to [-1,1,1,3] and returns it.
+
+function countPositives(arr){
+    let last = arr.length-1 // change post to last and set it up as the last index of the array.
+    for(let x = 0; arr.length>x; x++){
+        if(arr[x]>0){
+            let count = arr[x]
+            count = last
+        }
+        return arr
+    }
+}
