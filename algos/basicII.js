@@ -52,3 +52,28 @@ function countPositives(arr){
         return arr
     }
 }
+
+//Evens and Odds - Create a function that accepts an array.  Every time that array has three odd values in a row, print "That's odd!".  Every time the array has three evens in a row, print "Even more so!".
+
+function evensNOdds(arr){
+    let odd = 0
+    let even = 0
+    for(let x = 0; arr.length>x; x++){
+        if(arr[x]===1){
+            odd++
+            even = 0
+        } else if( arr[x]===0){
+            even++
+            odd = 0
+        }
+        if(odd === 3){
+            console.log(`that's odd`)
+            odd = 0
+        } else if(even === 3){
+            console.log(`even more so`)
+            even = 0
+        }
+
+    return arr
+}
+}
