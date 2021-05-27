@@ -605,3 +605,50 @@ li {
 
 .wrapper-2 {
 }
+
+/* Form */
+
+.form {
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+}
+
+ul {
+  padding-top: 0.5em;
+  display: table;
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: right;
+}
+
+ul li {
+  padding: 0.5em;
+}
+
+.form h2 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-form {
+  width: 5rem;
+  height: 2rem;
+  background-color: #16e0bd;
+  color: #fff;
+  border-radius: 20px;
+}
+form {
+}
