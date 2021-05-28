@@ -77,3 +77,26 @@ function evensNOdds(arr){
     return arr
 }
 }
+
+//Increment the Seconds - Given an array of numbers arr, add 1 to every other element, specifically those whose index is odd (arr[1], arr[3], arr[5], etc).  Afterward, console.log each array value and return arr.
+
+function incrementInSec(arr){
+    for(let x = 0; arr.length>x; x++){
+        if(arr[x] !== 0){
+            console.log(arr[x]);
+        }
+        return arr
+    }
+
+}
+
+//Previous Lengths - You are passed an array (similar to saying 'takes in an array' or 'given an array') containing strings.  Working within that same array, replace each string with a number - the length of the string at the previous array index - and return the array.  For example, previousLengths(["hello", "dojo", "awesome"]) should return ["hello", 5, 4]. Hint: Can for loops only go forward?
+
+function prevLength(arr){
+    for(let x = arr.length - 1; x >= 0; x--){
+         arr[x] = arr[x-1].length
+        }
+        return arr
+    }
+
+    console.log(prevLength(["hello", "dojo", "awesome"]))
