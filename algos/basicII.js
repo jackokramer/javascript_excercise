@@ -100,3 +100,25 @@ function prevLength(arr){
     }
 
     console.log(prevLength(["hello", "dojo", "awesome"]))
+
+// Add Seven Add Seven - Build a function that accepts an array. Return a new array with all the values of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) should return [8,9,10] in a new array.
+
+function addSeven(arr){
+    let newArr = []
+    for(let x = 0; arr.length>x; x++){
+        newArr.push(arr[x]+7)
+    }
+    return newArr
+}
+
+//Reverse Array - Given an array, write a function that reverses its values, in-place.  Example: reverse([3,1,6,4,2]) returns the same array, but now contains values reversed like so... [2,4,6,1,3].  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
+
+function reveresArr(){
+    //let temp = arr[0]
+    for(let x = 0; arr.length/2>x; x++){
+        let temp = arr[x]
+        arr[x] = arr[arr.length -1 -x]
+        arr[arr.length-1-x] = temp
+    }
+    return arr
+}

@@ -3,6 +3,8 @@ const host = 'localhost'
 const database = '<postgres db name>'
 const password = '<postgres password>'
 const port = '<postgres port>'
+const redis = require('redis')
+const client = redis.createClient()
 
 import {Sequilize, Model, Datatypes} from  'sequelize'
 
@@ -33,6 +35,8 @@ Dog.init({
 Dog.findAll({
     attributes:[age]
 })
+
+client.quit()
 
 const results = await Dog.findAll()
 
