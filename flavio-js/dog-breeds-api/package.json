@@ -1,0 +1,25 @@
+{
+  "name": "dog-breeds-api",
+  "version": "1.0.0",
+  "description": "api connection to dog breeds",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TBA"
+  },
+  "keywords": [
+    "dog",
+    "breed",
+    "etc"
+  ],
+  "author": "jack kramer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5"
+  }
+}
