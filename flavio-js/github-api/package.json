@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel watch app.js & browser-sync start --server --files '.'",
+    "watch": "parcel watch app.js",
+    "sync": "browser-sync start --server --files '.'"
   },
   "keywords": [],
   "author": "",

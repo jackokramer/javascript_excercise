@@ -1,6 +1,5 @@
 import axios from "axios"
 
-
 const createCard = (data)=> `
  <div class="px-4 py-5 sm:px-6 -ml-4 -mt-4 border-b border-gray-200 pb-8 flex justify-between items-center flex-wrap sm:flex-no-wrap">
     <div class="ml-4 mt-4">
@@ -50,7 +49,6 @@ const createCard = (data)=> `
       </span>
     </div>
   </div>
-
 `
 
 
@@ -60,11 +58,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     form.addEventListener("submit", async (event)=>{
         event.preventDefault()
         const username= document.querySelector("input").value
-        if(usernames.includes(username)){
+
+        if(!username){
+            alert('enter a username')
+            return
+        }  else if(usernames.includes(username)){
             alert(`You've already searched for this user....`)
             return
         }
-        username.push(username)
+        usernames.push(username)
         document.querySelector('input').value = ''
 
         let response = ''
@@ -82,11 +84,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
         if(response){
             const card  = createCard(response.data)
-            document.querySelector("#container").insertAdjacentHTML('afterbegin', card)
+            document.querySelector('#container').insertAdjacentHTML('afterbegin', card)
         }
     })
 })
 
-const card = createCard(response.data)
+//const card = createCard(response.data)
 
 document.querySelector("#container").insertAdjacentElement("beforeend", card)
