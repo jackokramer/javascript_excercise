@@ -10,6 +10,9 @@ function App() {
   const incrementCount =  (increment) =>{
     setCount(count+increment)
   }
+  const decrementCount = (decrement)=>{
+    setCount(count+decrement)
+  }
   return (
     <div className="App">
       <Button increment={1} onClick={incrementCount}/>
