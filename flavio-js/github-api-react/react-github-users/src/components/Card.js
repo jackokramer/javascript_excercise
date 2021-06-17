@@ -7,11 +7,8 @@ const Card = (props) =>{
       <div className="ml-4 mt-4">
         <div className="flex items-center">
           <div className="flex-shrink-0">
-            <img
-              className="h-12 w-12 rounded-full"
-              src={props.avatar_url}
-              alt=""
-            />
+            <img className="h-12 w-12 rounded-full" src={props.avatar_url}
+              alt="" />
           </div>
           <div className="ml-4">
             <h3 className="text-lg leading-6 font-medium text-gray-900">
