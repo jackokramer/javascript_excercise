@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link"
+import {useRouter} from 'next/router'
+import posts from '../posts.json'
 //import '../style.css'
 
 const Index = () =>{
@@ -30,4 +32,23 @@ const Home = () => {
   )
 }
 
-export default Home
+
+export default () => {
+  const router = useRouter()
+
+  const post = posts[router.query.id]
+  if(!post) return <p>No post found</p>
+
+  useEffect(() =>{
+      router.push("/login")
+  })
+  return (
+    <>
+      <h2>Home Page</h2>
+      <h1>{post.title}</h1>
+      <p>{post.content}</p>
+      <a href="/blog">Blogger</a>
+      </>
+  )
+}
+
