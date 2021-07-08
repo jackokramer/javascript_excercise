@@ -1,0 +1,19 @@
+@mixin flex-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+header {
+  @include flex-center(column, red);
+  background: skyblue;
+  height: 100vh;
+  //   nesting example
+  button {
+    background: $primaryBtn;
+    &::after {
+      content: "Hello";
+    }
+  }
+}
