@@ -1,0 +1,24 @@
+//imports
+@import "components/box.scss";
+@import "components/card.scss";
+
+//nesting elements
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    p{
+    color: pink;
+}
+}
+
+.navigation{
+    width: 100%;
+    background: #000;
+
+    .container .nav-item {
+        float: left;}
+            .container .nav-item a{
+        color: #fff
+    }
+}

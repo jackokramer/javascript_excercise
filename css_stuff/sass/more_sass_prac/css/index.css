@@ -1,0 +1,20 @@
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.container p {
+  color: pink;
+}
+
+.navigation {
+  width: 100%;
+  background: #000;
+}
+.navigation .container .nav-item {
+  float: left;
+}
+.navigation .container .nav-item a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */

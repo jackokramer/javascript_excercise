@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-family: 16px;
+}
+
+nav {
+  background: #222;
+  padding: 0 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+html {
+  text-align: center;
+  padding-top: 1em;
+  background-color: #f66dda;
+}
+
+button {
+  padding: 1em 1.2em;
+  background-color: #555;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0.3em;
+  border: none;
+  border-bottom: 4px solid #aa4b72;
+  cursor: pointer;
+}
+
+section {
+  max-width: 700px;
+  margin: 2em auto;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #2b2c3b;
+  text-align: left;
+  display: none;
+  margin-top: 20px;
+}
+
+section.visible {
+  display: block;
+}
+
+/* classes */
+.toggs {
+  margin-top: 3rem;
+}
+.sub-menu {
+  list-style-type: none;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.item.button {
+  padding: 9px 5px;
+}
+
+.item:not(.button)a:hover,
+.item a:hover::after {
+  color: #ccc;
+}
+
+/* mobile */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+  text-decoration: none;
+}
+
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .item {
+  display: block;
+}
+
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* submenu - mobile */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+
+.has-submenu > a::after {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: #fff;
+  padding-left: 5px;
+}
+
+.sub-item a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: #111;
+  border-radius: 3px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 768px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+}
+
+.button a {
+  background: #0080ff;
+}
+.button.secondary {
+  border: 0;
+}
+.button.secondary a {
+  background: transparent;
+  border: 1px solid #0080ff;
+}
+
+.button a:hover {
+  text-decoration: none;
+}
+.button:not(secondary) a:hover {
+  background: skyblue;
+  border-color: darkblue;
+}
+
+/* desktop */
+
+@media all and (min-width: 960px) {
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .button {
+    order: 2;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}
+/* container */
+.container {
+  padding: 0 2em;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+main {
+  flex-basis: 70%;
+}
+
+main p {
+  font-size: 18px;
+  text-align: left;
+  margin: 5px 2px;
+}
+
+aside {
+  flex-basis: 20rem;
+  border: 4px solid black;
+  padding: 1em;
+}
+
+.content-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+}
+.card {
+  border: 2px solid black;
+  margin: 1rem;
+}
