@@ -2,17 +2,43 @@ const cats =[
     {
         name: 'Ramones',
         thumbnail: 'imgs/Pumpkin.jpeg',
+        location: 'San Francisco',
         catOftheDay: true
     },
      {
         name: 'Swindle Buttler',
-        thumbnail: 'imgs/Snuggles.png'
-        // credit: 'https://unsplash.com/photos/OzAeZPNsLXk'
+        thumbnail: 'imgs/Snuggles.png',
+        location: 'Venice'
     },
      {
         name: 'Cruella Devil',
         thumbnail: 'imgs/Cruella.png',
-        // credit: 'https://unsplash.com/photos/w2DsS-ZAP4U'
+        location: 'Venice'
+    },
+    {
+        name: 'Oaxaca',
+        thumbnail: 'imgs/oaxaca.jpeg',
+        location: 'Mexico',
+},
+    {
+        name: 'Paz',
+        thumbnail: 'imgs/paz.jpeg',
+        location: 'Venice',
+},
+    {
+        name: 'Heart throbber',
+        thumbnail: 'imgs/heart-throbb.jpeg',
+        location: 'Coppenhagen'
+    },
+    {
+        name: "Salvador Dali",
+        thumbnail: 'imgs/salvador.jpeg',
+        location: 'Barcelona'
+    },
+    {
+        name: "Brookings",
+        thumbnail: 'imgs/brookings.jpeg',
+        location: 'Oregon'
     }
 ]
 
@@ -41,6 +67,11 @@ cats.forEach(cat=>{
     catName.classList.add('cat-name')
     catName.textContent = cat.name
     card.appendChild(catName)
+
+    const location = document.createElement('p')
+    location.classList.add('location')
+    location.textContent = cat.location
+    card.appendChild(location)
 
     const paw = document.createElement('span')
     paw.classList.add("material-icons-outlined")

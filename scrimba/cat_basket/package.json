@@ -1,0 +1,18 @@
+{
+  "name": "cats_cradle",
+  "version": "1.0.0",
+  "description": "murals using json ",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NA"
+  },
+  "keywords": [
+    "murals"
+  ],
+  "author": "jackokramer",
+  "license": "ISC"
+}
