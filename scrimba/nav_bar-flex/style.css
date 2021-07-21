@@ -230,6 +230,10 @@ h1 > span {
   margin: 0 auto;
 }
 
+.cat-basket > * {
+  flex-basis: 100%;
+}
+
 .card,
 .pic {
   border-radius: 5px;
@@ -273,5 +277,12 @@ h1 > span {
   }
   .card {
     background-color: navy;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cat-basket {
+    display: row;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
