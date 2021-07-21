@@ -1,0 +1,201 @@
+:root {
+  --main-white-color: white;
+  --main-purple-color: #9e89b8;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  color: azure;
+}
+
+/* Classes */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  padding: 20px;
+}
+
+.page-header {
+  background: #59292e83;
+  background: #222;
+}
+
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header ul {
+  display: flex;
+  justify-content: space-between;
+  order: 1;
+  width: 90%;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 15px;
+}
+.cta-contact {
+  background-color: rgb(70, 4, 90);
+  color: var(--main-white-color);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  display: inline-block;
+  box-shadow: 0 2px #000;
+  order: 2;
+}
+.cta-contact:hover {
+  background-color: rgb(127, 64, 146);
+}
+
+.cta-contact:active {
+  background-color: var(--main-purple-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.page-header ul a {
+  text-decoration: none;
+  color: var(--main-white-color);
+}
+
+.page-header ul a:hover {
+  color: slategray;
+}
+
+.page-header ul li {
+  padding: 0 15px;
+}
+
+/* mobile menu */
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  order: 0;
+}
+
+.page-header li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+
+.item {
+  padding: 10px;
+}
+.item:not(.cta-contact) a:hover,
+.item a:hover::after {
+  color: #ccc;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.cta-contact {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .item {
+  display: block;
+}
+
+.button .secondary {
+  border-bottom: 1px #444 solid;
+}
+
+.card {
+  display: flex;
+  padding: 1em;
+}
+.card > main {
+  flex-basis: 100%;
+}
+
+/* media query */
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+  .page-header .cta-contact {
+    order: 1;
+  }
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+  flex-grow: 1;
+  background: var(--main-purple-color) url(img/brookings.jpeg) no-repeat center;
+  background-blend-mode: luminosity;
+}
+
+.page-main div {
+  max-width: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-main {
+    padding-left: 90px;
+  }
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background: #9984d4;
+}
+
+.page-footer ul {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.page-footer ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: var(--main-white-color);
+}
