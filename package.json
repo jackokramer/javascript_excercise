@@ -1,0 +1,22 @@
+{
+  "name": "javascript-exer",
+  "version": "1.0.0",
+  "description": "excercises for javascript",
+  "main": "custom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackokramer/javascript_excercises.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "jackokramer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackokramer/javascript_excercises/issues"
+  },
+  "homepage": "https://github.com/jackokramer/javascript_excercises#readme"
+}

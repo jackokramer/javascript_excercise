@@ -1,0 +1,27 @@
+html {
+  text-align: center;
+  padding-top: 1em;
+  background-color: #f6ddad;
+}
+
+button {
+  padding: 1rem 1.2rem;
+  background: #32369a;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0.3em;
+  border: none;
+  border-bottom: 0.2rem solid #1b1c47;
+  cursor: pointer;
+}
+
+#special_button {
+}
+
+.hidden-section {
+  display: none;
+}
+
+.hidden-section.reveal {
+  display: block;
+}
