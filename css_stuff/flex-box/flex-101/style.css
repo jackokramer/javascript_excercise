@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #cacaca;
+  padding: 10px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  /* flex direction property finds the direction of the items in the container by default its set to row: changing the direction column changes the axis from main axis to cross axis.
+  Column reverse changes the axis from x to y
+  Row reverse move it to the end of the x axis*/
+  justify-content: center;
+  /* how the flex items should be stacked along the x axis
+  justify content  - space between automatically calculated the items and the space availbale in the container
+  space around creates an equal amount of space between the left and the right
+  flex start - default value
+  flex end - moves the items in the container to the right of the x axis*/
+  align-items: center;
+  /* flex start moves items to the top of the y axis
+  flex end moves it to the bottom of the y axis
+  stretch - matches them all to the biggest height
+  baseline -
+  */
+  /* align self - align one single item along the flex axis. overides the align items propery
+  flex-end - will move it to the bottom of the y axis
+  flex-top will move it to the top of the y axis
+  start - aligned
+  */
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+/* Always be aware of the main axis */
+
+.item {
+  background-color: #ff0037;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.2rem;
+  margin: 0.6rem; /*remove this and there is no space between the items*/
+  flex-grow: 1;
+}
+
+/* flex-grow - allows an item to grow. value only matters in relation to the rest
+flex-shrink,
+flex-basis: declarea a percentage value or a pixel based value.  */
+
+.items-1 {
+  /* order: 3; */
+}
+.items-2 {
+  /* order: 4; */
+  flex-shrink: 0;
+}
+
+.items-3 {
+  /* order: 0; */
+  /* flex-basis: 50%; */
+}
+
+.items-4 {
+  /* order: 1; */
+  /* flex-grow: 3; */
+}
+
+.items-5 {
+  /* order: 2; */
+  /* flex: 5; */
+}
+.items-10 {
+  flex: 1;
+}
+/* .items-3 { */
+/* height: 150px; */
+/* } */
+
+/* .items-4 { */
+/* align-self: stretch; */
+/* font-size: 40px; */
+/* } */
