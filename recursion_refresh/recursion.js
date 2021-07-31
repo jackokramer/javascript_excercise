@@ -108,6 +108,48 @@ function recursiveFiboNacci(num){
 console.log(recursiveFiboNacci(9))
 
 
-function recursivebinary(arr){
-
+function recursivebinary(n, arr){
+    let mid = Math.floor(arr.length/2);
+    if(arr.longth === 1 && arr[0] != n){
+        return false;
+    }
+    if(n===arr[mid]){
+        return true
+    } else if(n<arr[mid]){
+        // do soemthing
+        return recursivebinary(n, arr.slice(0, mid))
+    } else if(n>arr[mid]){
+        //do something with it
+        return recursivebinary(n, arr.slice(mid))
+    }
 }
+
+// merge sort Algorithms
+
+const _mergeArray = (a, b) =>{
+    const c = []
+    while(a.length && b.length){
+        c.push(a[0]>b[0]? b.shift(): a.shift())
+    }
+    // if we stull have values add them to the end of 'c'
+    while(a.length){
+        c.push(a.shift())
+    }
+    while (b.length){
+        c.push(b.shift())
+    }
+    return c
+}
+    // let start = x[0]
+    // let end  = data.length(x-1)
+    // let mid = data.length(end)/2
+    const mergeSort = (a) => {
+        if(a.length<2) return a
+        const middle = MAth.floor(a.length/2)
+        const a_l = a.slice(0, middle)
+        const a_r = a.slice(middle, a.length)
+        const sorted_l = mergeSort(a_l)
+        const sorted_r = mergeSort(a_r)
+        return _mergeArray(sorted_l, sorted_r)
+
+    }
