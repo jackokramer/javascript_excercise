@@ -1,0 +1,19 @@
+{
+  "name": "oauth_prac",
+  "version": "1.0.0",
+  "description": "ouath tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "hello",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NA"
+  },
+  "keywords": [
+    "oauth"
+  ],
+  "author": "jackokramer",
+  "license": "ISC"
+}
