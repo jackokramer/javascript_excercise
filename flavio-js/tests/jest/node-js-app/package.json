@@ -1,0 +1,27 @@
+{
+  "name": "tripcost-node",
+  "version": "1.0.0",
+  "description": "trips cost with testing",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NA"
+  },
+  "keywords": [
+    "trip"
+  ],
+  "author": "jackokramer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.1.0"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^2.0.1",
+    "jest": "^27.0.6"
+  }
+}
