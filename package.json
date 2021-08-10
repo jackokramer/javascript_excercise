@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/jackokramer/javascript_excercises#readme",
   "dependencies": {
-    "cypress": "^8.1.0"
+    "cypress": "^8.2.0"
+  },
+  "devDependencies": {
+    "supertest": "^6.1.4"
   }
 }
