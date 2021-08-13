@@ -1,0 +1,139 @@
+/* variables */
+:root {
+  --main-white-color: white;
+  --main-purple-color: #9889b8;
+}
+
+/* variables end */
+* {
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+}
+
+main {
+}
+
+footer {
+}
+
+/* classes */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  padding: 20px;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+  flex-grow: 1;
+  background: var(--main-purple-color) url(imgs/gothic.jpeg) no-repeat center /
+    cover;
+  background-blend-mode: luminosity;
+  color: var(--main-white-color);
+  font-weight: bold;
+}
+
+.page-main div {
+  max-width: 500px;
+}
+
+/* page header */
+.page-header {
+  background-color: #560903;
+  color: aliceblue;
+}
+
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+  list-style: none;
+}
+
+.page-header a {
+  text-decoration: none;
+  padding: 1rem;
+  color: aliceblue;
+  font-weight: 600;
+}
+/* media query */
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+  .page-header .cta-contact {
+    order: 1;
+  }
+  .page-main {
+    padding-left: 90px;
+  }
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+/* page footer */
+.page-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #9984d4;
+  color: var(--main-white-color);
+}
+
+.page-footer ul {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.page-footer li {
+  justify-content: space-between;
+  margin: 1rem;
+  color: var(--main-white-color);
+}
+
+.page-footer a {
+  color: var(--main-white-color);
+}
+
+.cta-contact {
+  background-color: navy;
+  color: var(--main-white-color);
+  box-shadow: bold;
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid black;
+  box-shadow: 0.3rem 0.5rem grey;
+  border-radius: 4px;
+}

@@ -1,0 +1,147 @@
+*/ :root {
+  --black: #30385d;
+  --white: white;
+  --beige: #fff2ee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: 20px/28px "Ubuntu", sans-serif;
+  color: var(--black);
+  background: var(--beige);
+}
+
+body.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+/* variables */
+
+.page-header,
+.page-header .menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.page-header .page-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 20px;
+  background: var(--beige);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.page-header .page-header-inner * {
+  z-index: 1;
+  font-weight: bold;
+}
+
+.page-header .logo {
+  font-size: 30px;
+}
+
+.page-header button {
+  font-size: 20px;
+}
+
+.page-header .menu-wrapper {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  background: var(--white);
+}
+
+.page-header .menu-wrapper ul {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.page-header .menu-wrapper li + li {
+  margin-top: 30px;
+}
+
+.page-header .menu-wrapper a {
+  font-size: 40px;
+}
+
+.page-header .helper-btns {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.page-header .helper-btns button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--black);
+}
+
+.page-header.menu-opened .page-header-inner {
+  box-shadow: none;
+}
+
+.page-header.menu-opened .menu-wrapper {
+  display: flex;
+}
+
+article {
+  max-width: 650px;
+  padding: 50px 30px;
+  margin: 60px auto 0;
+}
+article h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+article p {
+  font-weight: 300;
+}
+
+article p + p {
+  margin-top: 2rem;
+}
+
+.page-footer {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.page-footer a {
+  margin-left: 4px;
+}
