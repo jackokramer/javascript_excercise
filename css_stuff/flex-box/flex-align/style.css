@@ -1,7 +1,19 @@
-*/ :root {
+:root {
   --black: #30385d;
   --white: white;
   --beige: #fff2ee;
+}
+
+body.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.page-header.menu-opened .page-header-inner {
+  box-shadow: none;
+}
+
+.page-header.menu-opened .menu-wrapper {
+  display: flex;
 }
 
 * {
