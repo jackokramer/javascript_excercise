@@ -20,3 +20,30 @@ var twoSums = function(target, nums){
         map1.set(nums[x], x)
     }
 }
+
+//Two Nums
+
+var addTwoNumbers = function(l1, l2) {
+    let newNode = new ListNode(0);
+    let head = newNode
+    var carry = false
+    while(l1 || l2){
+        var nodeSum =  (l1?.val || 0) +  (l2?.val || 0);
+        nodeSum  += (carry) ? 1 : 0;
+        if(nodeSum > 9){
+            carry = true
+        }else{
+            carry = false
+        }
+        head.next = new ListNode(nodeSum % 10)
+
+        if(l1)l1 = l1.next;
+        if(l2)l2 = l2.next;
+
+        head = head.next
+    }
+    if(carry){
+         head.next = new ListNode(carry);
+    }
+    return newNode.next
+};
