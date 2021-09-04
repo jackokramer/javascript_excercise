@@ -13,5 +13,9 @@
   "devDependencies": {
     "electron": "^14.0.0",
     "electron-reloader": "^1.2.1"
+  },
+  "dependencies": {
+    "electron-store": "^8.0.0",
+    "rss-parser": "^3.12.0"
   }
 }
