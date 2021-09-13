@@ -26,7 +26,14 @@ const tabs = [
 ]
 
 tabBtn.addEventListener('click', function(){
-    console.log(tabs[0])
+    // grab the url of the current tab
+    chrome.tabs.query({active: true}), function(){
+    console.log(tabs)
+    myLeads.push(tabs[0].url)
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    render(myLeads)
+    }
+
 })
 
 // render out the lead
@@ -35,10 +42,11 @@ function render(leads){
     for(let x = 0; leads.length>x ; x++){
         // Wrap the lead in an anchor tag (<a>) inside the <li>
         // Can you make the link open in a new tab?
-        listItems += `<li>
-                        <a target='_blank' href='${leads[x]}'>
-                         ${leads[x]} </a>
-                    </li>`
+        listItems +=
+            `<li>
+                <a target='_blank' href='${leads[x]}'>
+                ${leads[x]} </a>
+            </li>`
         console.log(listItems)
         //create element
         // set textContent
