@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container,
+.button-container,
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.timer,
+button {
+  margin: 0.5em;
+  border-radius: 5px;
+}
+
+.timer {
+  height: 12em;
+  width: 13em;
+  background-color: greenyellow;
+  align-items: center;
+  padding: 2em;
+  border: 0.2rem solid aliceblue;
+}
+
+.timer p {
+  font-size: 100px;
+}
+
+button {
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
+#work-btn {
+  color: aliceblue;
+  background: orange;
+  font-weight: bold;
+}
+
+#short-break-btn {
+  color: aliceblue;
+  background: navy;
+  font-weight: bold;
+}
+#long-break-btn {
+  color: aliceblue;
+  background: purple;
+  font-weight: bold;
+}
