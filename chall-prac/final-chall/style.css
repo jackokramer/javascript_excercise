@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: lato;
+  font-size: 1rem;
+}
+
+header {
+  background: #2e354f;
+  color: aliceblue;
+  padding: 2.2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+/* classes */
+
+.container {
+  margin: 0 auto;
+}
+
+.width {
+  max-width: 620px;
+}
+
+.one {
+  padding: 2.2rem;
+}
+
+.one h2 {
+  color: #ef5839;
+}
+
+.one a {
+  color: #ef5839;
+}
+
+.one span {
+  font-weight: 900;
+}
+
+/* section two */
+.two {
+  padding: 2.2rem;
+  background: #2e354f;
+}
+
+.two h2 {
+  color: #ef5839;
+}
+
+.two p {
+  color: aliceblue;
+}
+
+.orange {
+  color: #ef5839;
+}
+
+.two span {
+  font-weight: 900;
+}
+.btn-orange {
+  padding: 0.5rem 0.5rem;
+  background: #ef5839;
+  color: aliceblue;
+  text-decoration: none;
+}
+.btn-white {
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.5rem;
+  margin-right: 0.3rem;
+  background: aliceblue;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-orange:hover {
+  color: crimson;
+  background: aliceblue;
+}
+
+.btn-white:hover {
+  color: aliceblue;
+  background: crimson;
+}
+
+.one a:hover {
+  color: lime;
+}
+
+.orange:hover {
+  color: cyan;
+}
+
+.buttons {
+  display: inline-block;
+  margin: 0.7rem 0.3rem 0 0;
+}

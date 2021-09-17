@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: black;
+  color: aliceblue;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header span {
+  color: rgb(157, 219, 32);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* classes */
+.one {
+  padding: 3.5rem;
+  text-align: center;
+}
+.one span {
+  color: rgb(157, 219, 32);
+  font-weight: bold;
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.one h2 {
+  font-size: 2rem;
+  padding: 3rem;
+  text-align: center;
+  border-top: 1px solid slategrey;
+  border-bottom: 1px solid slategrey;
+}
+
+.btn {
+  display: inline-block;
+  color: black;
+  background: rgb(157, 219, 32);
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+}
+
+.two {
+  padding: 2rem;
+  background: rgb(46, 45, 45);
+  color: aliceblue;
+  text-align: center;
+}
+
+.two h2 {
+  font-size: 1.75rem;
+
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid slategrey;
+  border-bottom: 1px solid slategrey;
+}
+
+.two span {
+  color: rgb(157, 219, 32);
+  font-weight: bold;
+}
+
+.continue {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(157, 219, 32);
+}
+
+.btn-2 {
+  display: inline-block;
+  color: rgb(14, 13, 13);
+  background: rgb(157, 219, 32);
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+}
+
+.btn-2:hover {
+  color: azure;
+  background: crimson;
+}
+
+.btn:hover {
+  color: azure;
+  background: crimson;
+}
+
+.written {
+  display: inline-block;
+  font-size: 0.8rem;
+}
