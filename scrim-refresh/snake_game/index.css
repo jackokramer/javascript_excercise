@@ -2,15 +2,24 @@ html,
 body {
   margin: 0.7rem;
   padding: 0.7rem;
+  background: slategray;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 /* classes */
 .grid {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   width: 200px;
   height: 200px;
   border: 2px solid #000;
+  background: crimson;
   /*margin: 0 auto;*/
 }
 
@@ -21,4 +30,8 @@ body {
 
 .snake {
   background: #090;
+}
+
+.apple {
+  background: aqua;
 }
