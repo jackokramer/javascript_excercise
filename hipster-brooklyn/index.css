@@ -1,0 +1,92 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #130e0f;
+  background: slategray;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #fff;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#container {
+  width: 100%;
+}
+
+.team-img {
+  width: 200px;
+  border-radius: 100%;
+  margin: 10px;
+  box-shadow: 10px 10px 5px rgb(70, 68, 68);
+  margin-bottom: 2rem;
+}
+
+.body {
+  margin-top: 1rem;
+  padding: 1.3rem;
+  background: aliceblue;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  /* box-shadow: 0.5rem 0.5rem 0.3rem grey; */
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.body p {
+  text-align: left;
+}
+
+.cool-stuff {
+  color: crimson;
+  font-weight: 600;
+}
+
+#modal {
+  max-width: 500px;
+  height: 400px;
+  /* background: rgba(0, 0, 0, 0.2); */
+  padding: 1.2rem 1.4rem;
+  margin: 0 auto;
+}
+
+#overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(207, 207, 207, 0.4);
+}
+
+#overlay p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: aliceblue;
+}
+
+#overlay input {
+  color: #130e0f;
+}
+
+#open-modal,
+#close-modal {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background: navy;
+}
