@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  /* font-size: 0.9rem; */
+}
+
+html {
+  font-size: 0.9rem;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -12,11 +17,16 @@ header {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;
 }
 
 header span {
   color: rgb(157, 219, 32);
   font-weight: bold;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {
@@ -38,6 +48,9 @@ h3 {
   font-weight: bold;
 }
 .container {
+  /* width: 90%;  to make sure stuff doesn't touch the sides*/
+  /* border: 2px solid blue; */
+  padding: 0 2em; /*another solution*/
   max-width: 500px;
   margin: 0 auto;
 }
@@ -67,7 +80,6 @@ h3 {
 
 .two h2 {
   font-size: 1.75rem;
-
   padding: 1rem;
   text-align: center;
   border-top: 1px solid slategrey;
@@ -107,4 +119,160 @@ h3 {
 .written {
   display: inline-block;
   font-size: 0.8rem;
+}
+
+.portfolio {
+  margin-top: 1rem;
+  color: #fff;
+  background: #000;
+  padding-top: 1.5rem;
+}
+
+.portfolio h2 .accent-text {
+  color: #99d930;
+  font-weight: bold;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid aliceblue;
+  border-bottom: 1px solid aliceblue;
+}
+
+.work {
+  display: flex;
+}
+
+.portfolio-item {
+  margin: 0 1rem;
+}
+
+section {
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 1.3125rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .splitter {
+    display: flex;
+    align-items: center;
+    vertical-align: text-top;
+  }
+  /* section {
+    background: skyblue;
+  }*/
+  .two.inverse {
+    background: #99d930;
+    color: #252525;
+  }
+  .two.inverse .accent-text,
+  .inverse .name,
+  .inverse time,
+  .inverse a {
+    color: currentColor;
+  }
+  .btn-2 {
+    color: aliceblue;
+    background: #252525;
+  }
+  .btn-2:hover {
+    color: #252525;
+    background: #fff;
+  }
+
+  .two h2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid #000;
+  }
+  .btn-2 {
+    color: aliceblue;
+    background: #252525;
+  }
+  .btn-2:hover {
+    color: #252525;
+    background: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio {
+    margin-top: 1rem;
+    color: #252525;
+    background: #fff;
+    padding-top: 1.5rem;
+  }
+
+  .portfolio h2 .accent-text {
+    color: #99d930;
+    font-weight: bold;
+  }
+
+  .portfolio h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .work {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .portfolio-item {
+    width: 28%;
+  }
+}
+
+.portfolio .container {
+  max-width: 1200px;
+}
+
+@media (min-width: 750px) {
+  .portfolio {
+    margin-top: 1rem;
+    color: #fff;
+    background: #252525;
+    padding: 1.5rem 0;
+    min-height: 100vh;
+  }
+
+  .portfolio h2 .accent-text {
+    color: #99d930;
+    font-weight: bold;
+  }
+
+  .portfolio h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
+  }
+
+  .work {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio-item {
+    margin: 0 1rem;
+    width: 28%;
+    height: 15em;
+  }
+
+  .portfolio-item img {
+    height: 15em;
+    width: 100%;
+    object-fit: cover;
+  }
 }
