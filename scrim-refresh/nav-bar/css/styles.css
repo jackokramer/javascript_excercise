@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-size: 1.12rem;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 img {
@@ -72,6 +73,7 @@ strong {
 .container-nav {
   display: flex;
   justify-content: space-between;
+  letter-spacing: 1px;
 }
 
 .container-flex {
@@ -155,6 +157,7 @@ nav a:focus {
   font-weight: 700;
   color: #1792d2;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .article-read-more:hover,
@@ -271,11 +274,13 @@ h4 {
 .widget-title,
 .widget-recent-post-title {
   font-size: 1rem;
+  line-height: 1.2;
 }
 
 .widget-title {
   font-family: Ubuntu;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .widget-recent-posts {

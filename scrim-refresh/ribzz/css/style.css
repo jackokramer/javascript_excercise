@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
+  text-align: center;
+}
+
+/* =================
+   Typography
+   ================= */
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+h1 + p {
+  font-size: 1.3125rem;
+  color: #f18119;
+  text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 900;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+}
+
+.top-text {
+  font-size: 0.625rem;
+  font-weight: 900;
+  color: #f18119;
+  text-transform: uppercase;
+  order: -1;
+}
+
+.best {
+  font-weight: 900;
+}
+
+/* =================
+   END Typography
+   ================= */
+
+/* =================
+   Intro section
+   ================= */
+
+.one {
+  width: 50%;
+  background-image: url(../images/dark-ribs.jpg);
+  background-color: #404040;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 0em 0.25em 1em;
+  display: flex;
+  padding: 0 0.5em 2em;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.two {
+  width: 50%;
+}
+
+.one > *,
+.two > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* classes */
+
+.one span {
+  font-weight: 900;
+}
+
+/* two */
+
+.two h1 {
+  color: #404040;
+  font-weight: 500;
+}
+
+.two h2 {
+  color: #f18119;
+}
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+}
+
+input,
+.btn {
+  width: 100%;
+}
+
+input {
+  margin-bottom: 0.7rem;
+  text-align: inherit;
+  font-family: inherit;
+  padding: 0.25em;
+  border: 1px solid #404040;
+  border-radius: 2px;
+}
+.btn {
+  color: #fff;
+  background: #f18119;
+  border-radius: 5px;
+}
+
+/* ===========
+Media Query
+===========*/
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+  .container {
+    display: flex;
+  }
+  input {
+    margin-bottom: 0.7rem;
+    text-align: inherit;
+    font-family: inherit;
+    padding: 0.25em;
+    border: 1px solid #404040;
+    border-radius: 2px;
+  }
+  .one,
+  .two {
+    width: 50%;
+    min-height: 100vh; /*setting a standard height might break the browser */
+  }
+  .form-input {
+    display: flex;
+    margin: 0 auto;
+  }
+  .btn {
+    color: aliceblue;
+    font-weight: bold;
+    background: #f18119;
+    padding: 0.4rem 3.5rem;
+    border-radius: 2px;
+  }
+
+  .two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
