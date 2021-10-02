@@ -1,0 +1,1 @@
+GET https://foodish-api.herokuapp..com/api/images/pizza HTTP/1.1

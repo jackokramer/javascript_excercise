@@ -122,9 +122,29 @@ input {
   border-radius: 2px;
 }
 .btn {
-  color: #fff;
-  background: #f18119;
+  display: inline-block;
   border-radius: 5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.25em;
+  letter-spacing: 1;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #ff713b, #f18119);
+  color: white;
+  /* transition: background-color 250ms linear; */
+  /* transform: scale(1);  anything higher will overlap the content*/
+  transition: transform 250ms linear;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: black;
+  transform: scale(1.1);
 }
 
 /* ===========
