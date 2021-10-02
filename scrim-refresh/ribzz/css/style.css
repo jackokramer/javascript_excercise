@@ -43,9 +43,12 @@ h1 + p {
 .top-text {
   font-size: 0.625rem;
   font-weight: 900;
+  padding-top: 2px;
   color: #f18119;
   text-transform: uppercase;
   order: -1;
+  border-top: 5px solid #ff713b;
+  /* border-image: linear-gradient(to left, red, blue); */
 }
 
 .best {
@@ -63,7 +66,8 @@ h1 + p {
 .one {
   width: 50%;
   background-image: url(../images/dark-ribs.jpg);
-  background-color: #404040;
+  background-color: #ff0000;
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,6 +185,7 @@ Media Query
   .form-input {
     display: flex;
     margin: 0 auto;
+    margin-top: 0.5rem;
   }
   .btn {
     color: aliceblue;

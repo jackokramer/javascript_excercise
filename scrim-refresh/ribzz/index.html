@@ -14,19 +14,20 @@
 
             <h1>Learn how to make <span class="best">the best BBQ ribs</span> in town</h1>
             <p>Join Us for this live webinar</p>
-            <p class="top-text">Mouth Wateringly delicious</p>
+            <p class="top-text">MouthWateringly delicious</p>
         </section>
-        <section class="two">
+        <section class="two" id="two">
             <h1>Become a BBQ master!</h1>
             <h2>Register Today</h2>
             <p>BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
-            <form class="email-collector" action="/submit" method="post">
-                <input id="name" class='form-input' type="text" placeholder="first name" required value="full name ">
-                <input id="email" class='form-input' type="email" placeholder="email" required value="email">
+            <form class="email-collector" action="/submit" method="post" id="collector">
+                <input id="name" name="firstName" class='form-input' type="text" placeholder="first name" required value="full name ">
+                <input id="email"  name ='emailAddress' class='form-input' type="email" placeholder="email" required value="email">
                 <button class="btn btn-primary" type="submit">Register</button>
             </form>
             <p class="fine-print">We'll never share your information without your permission</p>
         </section>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
