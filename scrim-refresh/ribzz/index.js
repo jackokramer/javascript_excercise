@@ -6,9 +6,10 @@ collector.addEventListener('submit', event => {
     let ourFormData = new FormData(event.target)
 
     let userName = ourFormData.get('firstName')
+    let emailAddress = ourFormData.get('emailAddress')
     let updateHTMLContent = `<h2>Congrats ${userName}!</h2>
                     <p>Your on your way to becoming a bbq master</p>
-                    <p class="fine-print">We'll never share your information without your permission</p>`
+                    <p class="fine-print">We'll  send you weekly bbq tips to ${emailAddress}</p>`
     let ourMainContent = document.getElementById('two')
     ourMainContent.innerHTML = updateHTMLContent
 })
