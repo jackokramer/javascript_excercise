@@ -20,9 +20,6 @@ body {
   height: 15px;
 }
 
-#score {
-}
-
 .pac-dot {
   background: green;
   border: 5px solid white;
@@ -39,7 +36,32 @@ body {
 }
 
 .pacman {
-  background: yellow;
+  background: rgb(235, 182, 9);
   border-radius: 7.5px;
+  border: none;
+}
+
+.blinky {
+  background: red;
+  border: none;
+}
+
+.pinky {
+  background: blueviolet;
+  border: none;
+}
+
+.zedd {
+  background: aqua;
+  border: none;
+}
+
+.minky {
+  background: orange;
+  border: none;
+}
+
+.scared-ghost {
+  background: aquamarine;
   border: none;
 }

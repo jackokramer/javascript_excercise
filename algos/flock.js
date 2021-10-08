@@ -41,7 +41,7 @@ console.log(mostFrequentWord(str))
 
 class Immutable{
     constructor(int, arbyJ, date){
-        this.int = 0
+        this.int = int
         this.arbyJ = this.bigInt()
         this.date = this.getFullYear()
 
