@@ -23,14 +23,14 @@
                 </ul>
         </nav>
     </header>
-    <div class="form">
+    <div class="form" id="new-post">
         <form action="/submit" method="post">
-            <p>Your title:
-            <input type="text">
+            <p>Your title:</p>
+            <input type="text" id="post-title"/>
             <p>Your Message:</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea cols="30" rows="10" id="post-body"></textarea>
             <br>
-            <button>Submit</button>
+            <button class="post">Post</button>
         </form>
     </div>
     <div id="items">

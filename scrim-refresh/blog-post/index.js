@@ -1,39 +1,48 @@
-/**
- Challenge:
+   let postArray = []
+   const titleInput = document.getElementById('post-title')
+   const bodyInput = document.getElementById('post-body')
+   const form = document.getElementById('new-post')
 
- GET a list of blog posts from the JSON Placeholder API.
-
- BaseURL: https://apis.scrimba.com/jsonplaceholder/
- Endpoint: /posts
-
- Since there's so many posts, let's limit the array to just 5 items.
- You can use the `.slice()` array method to just grab the first 5 objects
- from the data array that comes back from the API
-
- Log the 5 items to the console
- */
-
- /**
- Challenge:
-
- With the 5 blog post objects, display the `title` and `body`
-properties of the first 5 posts on the browser page.
-
- Hints:
- * Create a `div` in the HTML file to store these items
- * Loop over the items creating a string of HTML elements you
-   can then put into the div with `innerHTML`
- */
-
- fetch('https://apis.scrimba.com/jsonplaceholder/posts', {method: 'GET'})
-    .then(response => response.json())
-    .then(data =>  {
-        const postArr = data.slice(0,5)
-        console.log(postArr)
-        let html = ''
-        for(let post of postArr) {
+   function renderPost(){
+    let html = ''
+        for(let post of postArray) {
             html += `<h3>${post.title}</h3>
             <p>${post.body}</p>`
         }
         document.getElementById('items').innerHTML = html
+   }
+
+ fetch('https://apis.scrimba.com/jsonplaceholder/posts')
+    .then(response => response.json())
+    .then(data =>  {
+         postArray = data.slice(0,5)
+    renderPost()
         })
+
+document.getElementById('new-post').addEventListener('submit', function(e){
+    e.preventDefault()
+    const postTitle = titleInput.value
+    const postBody = bodyInput.value
+    const data ={
+        title: postTitle,
+        body: postBody
+    }
+
+        const options = {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers:{
+                "Content-Type": "application/json"
+            }
+        }
+
+fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
+        .then(response => response.json())
+        .then(post => {
+            postArray.unshift(post) //unshift() -method adds it to the top
+            renderPost()
+            titleInput.value =""
+            bodyInput.value =''
+            //form.reset()
+        })
+})
