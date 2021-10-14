@@ -6,13 +6,16 @@ body {
   margin: 0;
   padding: 0;
   padding: 2em;
+  background: skyblue;
 }
 
 header {
+  margin: 0 auto;
   display: block;
 }
 
 nav {
+  text-align: center;
   display: inline;
   padding: 0.25rem;
   height: 1.6rem;
@@ -54,14 +57,25 @@ p {
 }
 
 .form {
+  margin-top: 5rem;
   display: grid;
   text-align: center;
-  padding-top: 60px 10px 10px;
-  height: 350px;
-  width: 100%;
+  /* padding-top: 60px 10px 10px; */
+  height: 450px;
+  width: 50%;
   background: grey;
   color: aliceblue;
   font-weight: 800;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form h2 {
+  text-shadow: 2px 2px red;
+}
+
+.form input {
+  box-shadow: 2px 2px blue;
 }
 
 .post {
@@ -72,6 +86,12 @@ p {
   border-radius: 4px;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.post:hover {
+  background: crimson;
+  color: #021;
 }
 
 .submit:hover {
@@ -79,4 +99,90 @@ p {
   color: #000;
   cursor: pointer;
   font-weight: 900;
+}
+
+#items {
+  margin-bottom: 3rem;
+  margin: 0 auto;
+  background: #555555;
+  padding: 20px;
+  color: aliceblue;
+}
+
+/* footer */
+
+footer {
+  margin-top: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 1.4rem;
+  background: slateblue;
+}
+footer h3 {
+  color: aliceblue;
+  text-align: center;
+}
+
+/* carousel feature */
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+}
+
+.carousel-item {
+  background: slate;
+  padding: 20px;
+  display: none;
+}
+.carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.carousel-item-visible {
+  display: block;
+}
+
+.carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.carousel-actions button#carousel-button-next {
+  margin: 0 1.6rem;
+}
+
+.carousel-actions button#carousel-button-prev {
+}
+#carousel-button-previous,
+#carousel-button-after {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: aqua;
+  border: none;
+  position: relative;
+  border-radius: 50%;
+  padding: 1.7rem;
+}
+#carousel-button-after {
+}
+
+#carousel-button-previous:hover,
+#carousel-button-after:hover {
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: crimson;
+  border: none;
+  position: relative;
+  border-radius: 50%;
+  padding: 1.7rem;
 }
