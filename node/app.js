@@ -22,4 +22,4 @@ server.listen(6789);
 // print to terminal window
 console.log("Running in localhost at port 6789");
 
-// run repo
+// run repo now
