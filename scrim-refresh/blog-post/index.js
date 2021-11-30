@@ -46,3 +46,4 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
             //form.reset()
         })
 })
+//posts with vanilla js
