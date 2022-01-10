@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3rem;
+  background: whitesmoke;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.dark-shart {
+  background: #333;
+  color: white;
+}
