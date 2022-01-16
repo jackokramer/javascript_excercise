@@ -22,7 +22,7 @@ section {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border: none;
 }
@@ -66,10 +66,20 @@ a {
   background: crimson;
 }
 
+.nav {
+  display: block;
+}
+.nav--visble {
+  display: hidden;
+}
+
 /* footer */
 
 @media (min-width: 768px) {
   ul {
+    display: flex;
+  }
+  .nav {
     display: flex;
   }
 }
