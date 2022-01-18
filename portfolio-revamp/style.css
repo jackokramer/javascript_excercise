@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Mochiy Pop P One", sans-serif;
+  max-width: 1110px;
+  background: slategrey;
+  color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* header */
+header {
+  padding: 2rem;
+  background: #000;
+  color: whitesmoke;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover {
+  color: crimson;
+  opacity: 50%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-align: center;
+}
+
+/* end header */
+/* start main */
+main {
+  background: rgb(120, 136, 151);
+  padding: 3rem;
+}
+/* end main */
+/* start secondary */
+.secondary {
+  padding: 3rem;
+}
+.seondary-title {
+  text-align: center;
+}
+.col {
+  padding: 2em;
+  background-color: teal;
+  margin-top: 1rem;
+}
+/* end secondary */
