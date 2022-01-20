@@ -9,17 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;500&family=Mochiy+Pop+P+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
     <title>Jack Kramer Portfolio</title>
 </head>
 <body>
     <header>
-        <img src="logo.svg" alt="My Logo" class="logo">
+        <img src="imgs/heptagram.svg.png" alt="My Logo" class="logo">
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
         <nav class="nav-list">
+            <img src="imgs/heptagram.svg.png" alt="My Logo" class="logo">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">My Hobbies</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="my-hobbies.html">My Work</a></li>
+                <li><a href="my-work.html">My Hobbies</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +35,9 @@
         <h1>Jacko Kramer's Portfolio</h1>
         <div class="about-me">
             <h2 class="about-me-title">About Me</h2>
-            <img src="" alt="">
+            <div class="me-photo">
+                <img src="imgs/me.png" alt="A photo of Me">
+            </div>
             <div class="about-me-content">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis vel necessitatibus velit deserunt voluptatum laborum sequi consequatur natus totam facilis dolore eaque provident et facere, ex non? Quaerat consequatur quasi beatae est necessitatibus corporis eius obcaecati architecto aspernatur, impedit excepturi reiciendis, repellat saepe dolor iure rem tenetur, atque inventore. Recusandae!</p>
             </div>
@@ -48,15 +58,24 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis repudiandae reprehenderit similique dicta enim ex quaerat eum veritatis laboriosam sed quia, optio nisi non, at amet expedita asperiores dolorem!</p>
             </div>
         </div>
+        <div class="clients">
+            <button class="btn-clients">Some Clients</button>
+        </div>
     </div>
     <footer>
-        <ul>
-            <li><a href="">GitHub</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+        <div class="strong">
+            <strong><a href="mailto:jackokramer17@gmail.com" class="footer__link">hello@jack</a> </strong>
+        </div>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://github.com/jackokramer" class="social-list__link"> <i
+                        class="fab fa-github-alt"></i></a></li>
+            <li class="social-list_item"><a href="https://www.linkedin.com/in/jack-kramer-73642157/"
+                    class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-list_item"><a href="https://www.instagram.com/jackokramer/" class="social-list__link"><i
+                        class="fab fa-instagram"></i></a></li>
+            <li class="social-list_item"><a href="" class="social-list__link"><i class="fab fa-codepen"></i></a></li>
         </ul>
+
     </footer>
     <script src="index.js"></script>
 </body>

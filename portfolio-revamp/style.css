@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Be Vietnam Pro", sans-serif;
@@ -17,10 +21,91 @@ img {
 }
 /* header */
 header {
-  padding: 2rem;
+  padding: 4rem;
   background: #000;
   color: whitesmoke;
   max-width: 100%;
+}
+
+nav {
+  position: fixed;
+  background: #000;
+  color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  line-height: 4.5;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+/* hamburger */
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: rgb(61, 61, 61);
+  width: 2rem;
+  height: 5px;
+  border-radius: 1rem;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before {
+  top: 6px;
+}
+.hamburger::after {
+  bottom: 6px;
+}
+.nav-toggle {
+  padding: 0.25rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1000;
+}
+
+.nav-open nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+/* end hamburger */
+.logo {
+  background: alice;
 }
 ul {
   list-style: none;
@@ -53,17 +138,130 @@ main {
   background: rgb(120, 136, 151);
   padding: 3rem;
 }
+.about-me {
+  background: aliceblue;
+  padding: 2rem;
+  color: #000;
+}
+.me-photo {
+  text-align: center;
+  padding: 2rem;
+  background: rgb(53, 52, 52);
+}
 /* end main */
 /* start secondary */
 .secondary {
   padding: 3rem;
+  /* background: #16e0bd; */
+  background-image: url(imgs/waterdrop.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #16e0bd;
 }
 .seondary-title {
   text-align: center;
 }
 .col {
-  padding: 2em;
+  padding: 2rem;
   background-color: teal;
   margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.clients {
+  text-align: center;
+  padding: 2rem;
+}
+.btn-clients {
+  padding: 1.25rem 1.75rem;
+  border: none;
+  color: aliceblue;
+  background: crimson;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.btn-clients:hover {
+  opacity: 75%;
+  background: orangered;
+  color: #000;
 }
 /* end secondary */
+/* start-footer */
+footer {
+  padding: 2rem;
+  max-height: 250px;
+  background: #000;
+}
+.strong {
+  text-align: center;
+}
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+.social-list_item {
+  margin-left: 1rem;
+}
+/* end footer */
+
+/* about-me page */
+
+.history {
+  padding: 3rem;
+  /* background: #16e0bd; */
+  background-image: url(imgs/leaves-julia-matuzova.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+/* end about-me */
+
+/* desktop media queries */
+@media (min-width: 600px) {
+  ul {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-left: auto;
+  }
+  nav {
+    display: flex;
+    align-items: flex-start;
+    /* changes kp - nav challenge */
+    height: auto;
+    visibility: visible;
+  }
+  li {
+    padding: 1em;
+  }
+  .nav-list {
+    display: flex;
+    /* changes kp - nav challenge */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: translateX(0);
+    position: relative;
+  }
+  .nav-item {
+    margin-left: auto;
+  }
+  .row {
+    display: flex;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .col {
+    justify-content: space-evenly;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+}
