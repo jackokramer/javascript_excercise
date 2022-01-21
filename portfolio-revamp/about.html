@@ -45,8 +45,32 @@
                 </div>
                     <img src="imgs/me-photo.png" alt="another photo of me" class="hero_img">
             </div>
-            <div class="btn-modal">
-                <a href="#" class="btn">Contact Me</a></div>
+            <div id="overlay">
+                    <div class="modal">
+                        <h2>💌 - Contact Info - 📬</h2>
+                            <h4>Contact Me</h4>
+                            <form action="https://formsubmit.co/jackokramer17@gmail.com" method="post">
+                                <p>Name: <input type="text" for="name" name="name" value="new name" required></p>
+                                <p>Email: <input type="text" for="email" name="email" value="new email" required></p>
+                                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+                                <p>Your Message: </p>
+                                <textarea name="message" for="message" value="message" required>
+                                </textarea>
+                                <br>
+                                <input type="submit" value="Send Message" class="send-message">
+                            </form>
+                            <br>
+                            <br>
+                            <!--<p>Email: jackokramer17@gmail.com</p>
+                            <p>Phone number:  Availabe Upon Request</p>-->
+                        <a href="#" class="btn" id="close-modal">Close Modal</a>
+                    </div>
+                </div>
+                <div class="btn-modal">
+            <a href="#" class="btn" id="open-modal">Contact Me</a>
+            </div>
+
         </div>
     </main>
     <section class="history">
@@ -77,6 +101,7 @@
 
     </footer>
     <script src="index.js"></script>
+    <script src="modal.js"></script>
 </body>
 
 </html>
