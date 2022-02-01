@@ -260,6 +260,8 @@ footer {
   .col {
     justify-content: space-evenly;
     height: auto;
+    width: 100%;
+    /* to make the columns evenly spaced */
   }
   .hamburger {
     display: none;
