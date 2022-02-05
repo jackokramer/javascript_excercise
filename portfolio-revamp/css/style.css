@@ -153,7 +153,7 @@ main {
 .secondary {
   padding: 3rem;
   /* background: #16e0bd; */
-  background-image: url(imgs/waterdrop.jpg);
+  background-image: url(../imgs/waterdrop.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   background-color: #16e0bd;
@@ -213,7 +213,7 @@ footer {
 .history {
   padding: 3rem;
   /* background: #16e0bd; */
-  background-image: url(imgs/leaves-julia-matuzova.jpg);
+  background-image: url(../imgs/leaves-julia-matuzova.jpg);
   background-size: cover;
   background-blend-mode: multiply;
 }
