@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(2, 25vh);
+  grid-template-columns: repeat(4, 1fr);
+  /* position relative */
+  position: relative;
+  background: slategray;
+  border: 0.5rem slategray;
+}
+
+.grid-item {
+  background: red;
+  grid-column: 1/8;
+  grid-row: 1/4;
+  position: absolute;
+  left: 25px;
+  right: 75px;
+  top: 25px;
+  bottom: 25px;
+  padding: 2rem;
+}

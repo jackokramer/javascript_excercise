@@ -1,0 +1,79 @@
+.item--large {
+  aspect-ratio: 1 / 2;
+  /* only the midddle one is targerted */
+}
+
+.align-items {
+  /*   jusify-content: space-between; */
+  /* align-items: stretch; default behavior */
+  /* align-items: start; pushes things to the top */
+  align-items: center;
+  /* justify-content: space-between;  - doesn't have an effect*/
+}
+
+.align-content {
+  align-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: end;
+  align-items: end;
+}
+
+.item {
+  padding: 2rem;
+  background: var(--box-color, orange);
+  flex-basis: 10%;
+  flex-grow: 1;
+}
+
+/* .item {
+  flex-basis: 10%;
+  flex-grow: 1;
+} */
+
+/* general styling */
+
+.align-items,
+.align-content {
+  /* display: flex; */
+  /*   flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  border: 0.5rem solid var(--border-color);
+  padding: 0.5rem;
+}
+
+.align-items {
+  --border-color: #e02442;
+  --box-color: #c42971;
+}
+
+.align-content {
+  --border-color: hsl(225, 50%, 55%);
+  --box-color: hsl(254, 70%, 60%);
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(212, 22%, 28%);
+  color: hsl(212, 22%, 90%);
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  opacity: 0.5;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.container {
+  width: min(100% - 4rem, 50rem);
+  margin-inline: auto;
+}
