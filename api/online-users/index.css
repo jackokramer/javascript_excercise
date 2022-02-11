@@ -1,0 +1,65 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7fc8f8;
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+* {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.header,
+.footer {
+  height: 10%;
+  width: 100%;
+  background: darkgoldenrod;
+}
+
+.main-content {
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  max-width: 900px;
+  background: rgb(231, 126, 27);
+}
+
+.my-online-user {
+  background: lawngreen;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #000;
+  margin: 0.5rem;
+  border-radius: 0.2rem;
+  max-height: 80%;
+}
+
+.main-content {
+  background: springgreen;
+  flex: auto;
+}
+
+.my-online-users {
+  display: flex;
+  flex-direction: column;
+}
+.user-username {
+  order: 1;
+  padding: 0.5rem;
+}
+
+.user-online {
+  height: 1rem;
+  width: 1rem;
+  background: green;
+  border-radius: 50%;
+  margin: 1rem;
+  order: 0;
+}
