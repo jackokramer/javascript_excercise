@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: aliceblue;
+  text-shadow: 0px 0px 20px #aaa;
+  padding: 1rem;
+}
+
+#author {
+  padding: 0;
+}
+
+main {
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: spa;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* classes */
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+/* ids */
+#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -1.5rem;
+  justify-content: flex-end;
+}
+
+/* .first-weather {
+  display: inline;
+} */
+
+#weather > img {
+  width: 70px;
+}
+
+.city-temp {
+  margin: 0;
+}
+
+.city-name {
+  margin-top: -40px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: right;
+}

@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.site-header {
+  padding-block: 20px 10px;
+  color: aliceblue;
+  background: #000;
+}
+.container {
+}
+
+.primary-nav {
+  display: inline-block;
+}
+
+.unstyled-list {
+  display: flex;
+  list-style: none;
+  margin-left: 2rem;
+}
+
+li {
+  margin-left: 1.5rem;
+}
+a:hover {
+  color: teal;
+  opacity: 75%;
+}
+
+.button {
+  display: inline-block;
+  pointer: cursor;
+  text-decoration: none;
+  border-radius: 0.125rem;
+  background: lime;
+  padding: 0.25em 1em;
+  color: #001;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro {
+  background: slategray;
+  padding: 2rem;
+  color: aliceblue;
+}
+
+.small-title {
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: block;
+}
+.small-a {
+  color: #501;
+}
+.site-title {
+  font-size: 3.5rem;
+}
+.flow {
+  width: 60%;
+}
+.secondary {
+  padding: 2rem;
+  background: rgb(48, 47, 47);
+  width: 100%;
+  color: #fff;
+}
+
+@layer reset, framework, base, layout, components, utilities;
+
+@layer reset {
+  body {
+    color: hotpink !important;
+  }
+}
+
+@layer layout {
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-fluid-3);
+  }
+
+  .site-header .primary-nav .nav-list a {
+    color: var(--lime-3);
+  }
+
+  .nav-list a:hover,
+  .nav-list a:focus {
+    color: var(--lime-0);
+  }
+
+  .site-header {
+    padding-block: var(--size-4);
+  }
+
+  .intro {
+    background: var(--gradient-23);
+    padding-block: clamp(2rem, 4vh, 4rem);
+    margin-block-end: clamp(2rem, 4vh, 4rem);
+  }
+}
+
+@layer components {
+  .button {
+    display: inline-block;
+    pointer: cursor;
+    text-decoration: none;
+    border-radius: 0.125em;
+
+    background: var(--lime-3);
+    padding: 0.25em 1em;
+    color: var(--gray-9);
+    font-weight: 700;
+  }
+}
+
+@layer base {
+  a {
+    color: red;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: var(--gray-9);
+    color: var(--gray-1) !important;
+  }
+
+  p {
+    max-width: var(--size-content-3);
+  }
+
+  .unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    inline-size: min(100% - 3rem, 60rem);
+    margin-inline: auto;
+  }
+
+  .flow :where(:not(:first-child)) {
+    margin-bottom: var(--size-4);
+  }
+
+  .site-title {
+    font-size: var(--font-size-fluid-3);
+    margin-block-end: var(--size-5);
+  }
+
+  .site-title span {
+    display: block;
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-fluid-1);
+  }
+}
