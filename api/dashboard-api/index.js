@@ -28,7 +28,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
     // document.body.innerHTML = `<div class="background-image> ${photo.image}</div>`
 // })
 
-fetch('https://newsapi.org/v2/everything?q=apple&from=2022-02-13&to=2022-02-13&sortBy=popularity&apiKey=105010fed3e34db89adc65a1023698b7')
+fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=105010fed3e34db89adc65a1023698b7')
     .then(res => {
         if(!res.ok){
             throw Error('something went wrong')
