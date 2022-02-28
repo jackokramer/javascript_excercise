@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: aqua;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
+.back {
+  border: 0.25rem solid aliceblue;
+  padding: 0.75rem 2rem;
+  background: rgb(202, 137, 17);
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.forward {
+  border: 0.25rem solid aliceblue;
+  padding: 0.75rem 2rem;
+
+  background: purple;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back:hover,
+.forward:hover {
+  color: black;
+  background: white;
+  opacity: 0.75;
+}
+
+a {
+  color: purple;
+  font-weight: bold;
+  margin: 0.5rem;
+}
