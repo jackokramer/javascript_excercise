@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hubballi", cursive;
+  font-family: "League Gothic", sans-serif;
+}
+
+nav {
+  padding: 2rem;
+  background: peru;
+  text-align: center;
+}
+
+.nav-link:hover {
+  opacity: 0.75;
+}
+
+.nav-list {
+  padding-top: 1rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: aliceblue;
+  font-weight: bold;
+  align-items: center;
+}
+
+.nav-item {
+  margin-top: 1rem;
+}
+
+.section-title {
+  padding: 2rem;
+  text-align: center;
+  background: slategray;
+  color: aliceblue;
+  background-image: url(../images/);
+}
+
+.post-header {
+  font-size: 3rem;
+}
+
+.post-text {
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  color: aliceblue;
+  font-size: 1rem;
+  border: none;
+  background: green;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+footer {
+  padding: 3rem;
+  background: #23424a;
+}
+
+@media (min-width: 700px) {
+  .nav-list {
+    display: flex;
+    list-style: none;
+    align-items: right;
+  }
+
+  .svg-icon {
+    color: black;
+  }
+
+  .nav-item {
+    margin-left: 3rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: bold;
+  }
+}
+
+/* ids */
+
+#blog-space {
+  padding: 3rem;
+  background: black;
+  color: white;
+}
