@@ -11,35 +11,38 @@
     <title>More Blogs</title>
 </head>
 <body>
-    <div class="container row">
-        <nav>
-            <ul class="nav-list">
+    <header>
+            <nav>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
                 <a href="#" class="svg-icon">
                     <img src="imgs/logo (2).svg" alt="responsive-blog">
                 </a>
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
         <div class="section-title">
-            <h2 class="post-header">Add a Post</h2>
-            <form action="post" id="new-post">
-                <label for="">
-                    <p class="post-text">Title: <input type="text" id="title"></p>
-                </label>
-                <label for="">
+            <form id="new-post">
+                            <h2 class="post-header">Add a Post</h2>
+
+                    <p class="post-text">Title: <input type="text" id="post-title"></p>
                 <p class="post-text">Text Area:</p>
-                    <textarea name="" id="body" cols="30" rows="10"></textarea>
-                </label>
+                    <textarea name="" id="post-body" cols="30" rows="10"></textarea>
                 <br>
                 <button class="btn" id="btn">Add New Post</button>
             </form>
         </div>
-    <div id="blog-space"></div>
+    <div id="blog-space">
+
+    </div>
     <footer></footer>
     <script src="index.js"></script>
+    <script src="toggle.js"></script>
 </body>
 </html>
