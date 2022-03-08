@@ -1,0 +1,1 @@
+ReactDOM.render(<h2>More react facts</h2>, document.getElementById('root'))
