@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    body: 0;
+    max-width: 900px;
+}
+/* Header */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background: slategrey;
+}
+.one{
+    display: flex;    
+}
+
+.App-logo{
+    width: 200px;
+}
+
+.title{
+    font-size: 3rem;
+    color: aqua;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-items-li, a{
+    color: azure;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+a{
+       text-decoration: none
+}
+a:hover{
+    color:aqua;
+    cursor: pointer;
+}
+
+/* main */
+
+.main{
+    padding: 3rem;
+    background: darkblue;
+    color: aliceblue;
+}
+.main-title{
+font-size: 3rem;
+}
+
+.main-li{
+    color:aqua;
+}
+
+span{
+    color:aliceblue;
+    font-size: 1.5rem;
+}
+
+/* footer */
+
+footer{
+    padding: 3rem;
+    background: #021;
+    text-align: center;
+}
+
+small{
+    color:aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+}
