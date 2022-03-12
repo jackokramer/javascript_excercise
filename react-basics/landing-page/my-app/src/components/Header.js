@@ -18,9 +18,9 @@ import logo from '../images/logo.svg';
           <div className="two">
              <h4>React Course - Project 1 </h4>
               <ul className="list-items">
-                <li><a href="https://">About</a></li>
-                <li><a href="https://">Pricing</a></li>
-                <li><a href="https://">More Info</a></li>
+                <li className="item"><a href="https://">About</a></li>
+                <li className="item"><a href="https://">Pricing</a></li>
+                <li className="item"><a href="https://">More Info</a></li>
               </ul>
             </div>
       </nav>

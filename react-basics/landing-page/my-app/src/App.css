@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.item {
+  margin-left: 0.5rem;
+}
+
 .two {
   text-align: center;
 }
