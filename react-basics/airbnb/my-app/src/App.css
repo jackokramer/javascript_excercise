@@ -39,3 +39,39 @@ nav {
   width: 80%;
   margin: 0 auto;
 }
+
+/* card.js component */
+.card {
+  padding: 3rem;
+  border-radius: 3px;
+  width: 25rem;
+  font-size: 0.75rem;
+}
+.card-photo {
+  padding: 3px;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-rating {
+}
+.card-star {
+  display: inline;
+  height: 1rem;
+}
+.grey {
+  color: #918e9b;
+}
+
+.card-more-info {
+  font-size: 1.2rem;
+}
+
+.card-italic-price {
+  font-weight: bold;
+}
