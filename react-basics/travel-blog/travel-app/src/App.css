@@ -1,0 +1,106 @@
+.App {
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* Main App */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.header {
+  background: #f55a5a;
+  padding: 3rem;
+  color: #fff;
+  max-width: 1200px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+}
+
+/* Main */
+.main {
+}
+.container {
+  padding: 4rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.card {
+  display: flex;
+  padding: 2rem 6rem;
+  margin: 0 auto;
+}
+.text {
+  margin-left: 2rem;
+}
+.photo {
+  width: 12rem;
+  height: 16rem;
+  border-radius: 4px;
+}
+.pin {
+  width: 10px;
+  height: 10px;
+}
+.first-line {
+  display: flex;
+  align-items: center;
+}
+.location {
+  text-transform: uppercase;
+  margin-right: 2rem;
+  color: #2b283a;
+}
+.google-maps {
+  color: slategray;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5;
+}
+.google-maps:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.title {
+  font-weight: Bold;
+  font-size: 2rem;
+}
+.timeline {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.description {
+  max-width: 600px;
+  color: #2b283a;
+  font-weight: 400;
+  font-size: 12px;
+}
