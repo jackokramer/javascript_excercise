@@ -19,7 +19,7 @@ export default function Main(){
         }))
         //const url = memesArray[randomNumber].url
         //console.log(url)
-
+//
         //    const memeData = memesData()
     }
     return(
