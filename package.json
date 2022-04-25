@@ -25,7 +25,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "babel-plugin-macros": "^3.1.0",
-    "cypress": "^8.2.0"
+    "cypress": "^8.2.0",
+    "esbuild": "^0.14.38",
+    "mdx-bundler": "^9.0.0"
   },
   "devDependencies": {
     "supertest": "^6.1.4"
