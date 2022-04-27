@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -110,7 +110,7 @@ p {
 }
 
 /*
-=============== 
+===============
 Navbar
 ===============
 */
@@ -119,7 +119,7 @@ Navbar
   margin-top: 5rem;
 }
 nav {
-  background: var(--clr-primary);
+  background: var(--clr-primary-dark);
   padding: 1.25rem 2rem;
 }
 .nav-center {
@@ -161,7 +161,7 @@ nav svg {
   font-size: 1.25rem;
 }
 /*
-=============== 
+===============
 Cart
 ===============
 */
@@ -213,7 +213,7 @@ Cart
   color: var(--clr-primary);
 }
 /*
-=============== 
+===============
 Cart Item
 ===============
 */
