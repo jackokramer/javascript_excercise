@@ -4,37 +4,34 @@
  */
 // taking the most used word in a paragraph and highlighting it.
 
-let string = "how do you do. Mr. I need your help and we need to run off to the hills"
-console.log(findMostRepeatedWord(str))
+let string = 'how do you do'
 
-function findMostRepeatedWord(str){
-  let words = str.match(/\w+/g)
+function mostRepeatedWord(string) {
+  let words = string.match(/\w+/g)
   console.log(words)
 
   let occurances = {}
 
-  for(let word of words) {
+  for(let word of words){
     if(occurances[word]){
       occurances[word]++
     } else {
-      occurances[1]
+      occurances[word]=1
     }
   }
-  console.log(occurances)
+console.log(occurances)
 
-let max = 0
+let max = 0;
 let mostRepeatedWord = ''
 
-for (let word of words) {
+for (let word of words){
   if(occurances[word]>max){
-    max = occurances[word]
+    max= occurances[word]
     mostRepeatedWord = word
   }
 }
-return mostRepeatedWord;
+  return mostRepeatedWord
 }
-
-
 
 //  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ducimus?
 //Nostrum reprehenderit culpa error rerum molestiae aperiam necessitatibus unde minima nulla, ab nemo debitis obcaecati quae sapiente neque ducimus quisquam numquam earum, ea quis nobis laborum praesentium possimus iusto? Laboriosam!</p>
@@ -57,4 +54,4 @@ class Immutable{
     }
 }
 
-const Immutable = new Immutable([1,4,5,7], '8/18/2021')
+//const Immutable = new Immutable([1,4,5,7], '8/18/2021')
