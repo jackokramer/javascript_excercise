@@ -1,0 +1,45 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.5rem;
+    background:#c7b9ff;
+    color: whitesmoke;
+    background: navy;
+    font-weight:900;
+}
+
+.password{
+    margin: .5em;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: .25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: inherit;
+    letter-spacing: .125em;
+    color: hotpink;
+    padding-left:  1em;
+    /* position: relative; */
+}
+
+span{
+    margin-left: -3rem;
+    color: black;
+    position: absolute;
+    margin-top: 12px;
+}
+
+::placeholder{
+    color: lightgray;
+    font-weight: 400;
+}
