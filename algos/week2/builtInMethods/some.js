@@ -62,3 +62,4 @@ const characters = [
         return false
     })
     console.log(massSmall)
+    //
