@@ -1,0 +1,76 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
+*{
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+.container{
+    padding: 2em 0;
+    margin: 0 auto;
+    max-width: 52rem;
+}
+
+.flow>*+*{
+    margin-top: var(--flow-space, 1em);
+}
+
+header{
+    padding: 2rem;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10rem;
+    padding:2rem 0;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a{
+    color: inherit;
+    padding: .5rem ;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+    color: yellowgreen;
+}
+
+.scroll-tracker{
+    height: .5rem;
+    inset: 0 0 auto;
+    background: lightblue;
+    position: fixed;
+    transform-origin: left;
+}
