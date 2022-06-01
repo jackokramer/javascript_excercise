@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #000;
+    color: aliceblue;
+}
+
+#overlay{
+    color: aliceblue;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#modal{
+    background: orange;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.2rem;
+    border: 8px solid #fff;
+    height: 200px;
+    position: relative;
+    top: 30%;
+    border-radius: 4px;
+}
+
+button{
+    background: skyblue;
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#close-modal{
+
+}
+
+#contact-me{
+
+}
+
+#contact-me:hover, #close-modal:hover{
+    background: crimson;
+    color: aliceblue;
+}
