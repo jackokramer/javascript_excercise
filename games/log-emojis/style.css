@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    font-family: Baloo;
+    padding: .5rem;
+    margin: 10px;
+    background: linear-gradient(#5DA4d9, #ddd);
+    background-repeat: no-repeat;
+    height: 1000px;
+
+}
+
+input{
+    margin: 0 auto;
+    display: block;
+    border: none;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button{
+    font-family: Baloo;
+    background: darkcyan;
+    color: white;
+    border: none;
+    padding: .75rem 1.5rem;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+    margin: 40px;
+        text-align: center;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+#push-btn,
+#unshift-btn {
+    background-color: #80D87F;
+}
