@@ -1,0 +1,77 @@
+:root {
+    --pink: #fbe6f4ff;
+    --yellow: #fffad1ff;
+    --green: #e1f0e5ff;
+    --blue: #b5caf9ff;
+    --orange: #f5e6db;
+    --raisin: #2b283aff;
+    --grey: #d4d4d4;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--raisin);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+    background-image: url('../imgs/shot-by-cerqueira.jpg');
+    background-size: cover;
+}
+
+p {
+    margin: 0 0 1em;
+    overflow: hidden;
+}
+
+.countdown-display {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.liftOff {
+    overflow: hidden;
+    -webkit-animation: slide-tr 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-tr 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-tr {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-110vh) translateX(110vh);
+        transform: translateY(-110vh) translateX(110vh);
+    }
+}
+
+/*
+@keyframes slide-tr {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px) translateX(100px);
+        transform: translateY(-100px) translateX(100px);
+    }
+}*/
+
+.liftOff:before{
+    position: absolute;
+    display: inline-block;
+    content: '🔥';
+    right: 15px;
+    top: 15px;
+    transform: rotate(210deg);
+    /* height: 50px; */
+    /* width: 50px; */
+    /* background: orange; */
+}
