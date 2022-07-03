@@ -1,0 +1,168 @@
+/*
+Challenge:
+Add a thin blurred border around the <h1>, <h2>,
+and <h4> using the text-shadow technique you
+learned in the Space Exploration section. Set
+the blur to 1px and the color to black.
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Happy Monkey', cursive;
+}
+
+h1,h2,h4{
+    text-shadow: 0px 0px 2px #000;
+}
+
+.age,
+.todays-date {
+    background: rgba(252, 177, 189)
+}
+
+#nick{
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 4px solid rgb(252, 177, 189)
+}
+
+
+.container{
+    background: linear-gradient(45deg, blue, red);
+    /* max-width: 400px; */
+    margin: 0 auto;
+    text-align: center;
+    color: whitesmoke;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age{
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.age:hover{
+    background: #000;
+    color: whitesmoke;
+}
+
+.todays-date{
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+.todays-date:hover {
+    background: #000;
+    color: whitesmoke;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+/* gift section */
+
+.gift-section{
+    margin-top: 1.2rem;
+}
+.happy{
+    font-size: 6rem;
+}
+
+.hover{
+        text-shadow: 1px 1px 2px #000;
+        font-weight: bold;
+}
+
+.present{
+    background-image: url("../imgs/gift-cover.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    border: 6px solid #fff;
+    border-radius: 8px;
+}
+
+.present-last {
+    background-image: url("../imgs/gift-cover.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    border: 6px solid #fff;
+    border-radius: 8px;
+}
+
+
+
+
+#gift-one:hover{
+    background-image: url("../imgs/messi_show.webp")
+}
+
+#gift-two{
+    margin-left: 1rem;
+}
+
+#gift-two:hover{
+    background-image: url("../imgs/messi-more.webp")
+}
+
+#gift-three:hover{
+    background-image: url("../imgs/get.webp")
+}
+#gift-four:hover {
+    background-image: url("../imgs/pogba.webp");
+    background-size: cover;
+}
+
+#gift-five:hover {
+    background-image: url("../imgs/surf.webp");
+    background-size: cover;
+}
+
+/* footer */
+footer{
+    margin-top: 1.5rem;
+}
+.scrimba-link{
+    color: whitesmoke;
+}
+
+.footer-p{
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px rgba(0,0,0);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+/*
+Challenge:
+First, wrap the HTML elements in a <div> with an
+id called "header".
+
+Then, select the "header" and use flexbox to achieve
+the layout you've been provided in the design slide.
+*/
+
+/*
+Challenge:
+1. Create a "gift-section" <div> that will wrap
+   all the elements for the first gift.
+2. Add the <h2>, <h3>, and <img> elements, and
+   give all of them their own classes.
+3. Style the elements according to the design.
+
+PS: the image should be 400px wide.
+*/
+
