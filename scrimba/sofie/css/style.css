@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 0;
+}
+
+h2{
+    font-size:42px;
+    margin-top: 0;
+    border-top: 1px solid #C4c4c4;
+    padding: 1.8rem 0;
+    border-bottom: 1px solid #C4c4c4;
+}
+
+h1,h2{
+    font-weight: 300;
+}
+
+ body{
+    text-align: center;
+    padding: 2rem;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0;
+ }
+
+ .container{
+    max-width: 600px;
+    margin: 0 auto;
+ }
+
+ h1 span, h2 span{
+    font-weight: 900;
+    color: #99D930;
+ }
+
+ a{
+    color: #99D930;
+    font-weight: 900;
+    text-decoration: none;
+ }
+
+a:focus, a:hover{
+    color: #131414;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+ h3{
+    font-size: 36px;
+ }
+
+ .small-text{
+    margin-top: 5px;
+    font-size: 1rem;
+ }
+
+ .accent-text, .name, time{
+    font-weight: 900;
+        color: #99D930;
+ }
+ section{
+    padding: 100px 1rem;
+ }
+
+ .btn{
+    display: inline-block;
+    margin-top: 25px;
+    padding: .75rem 2.5rem;
+    color: #252525;
+    background: #99D930;
+    border: none;
+    text-decoration: none;
+    border-radius: .25rem;
+    font-weight: 900;
+ }
+
+ .btn:hover, .btn:focus {
+    background: #131414;
+    color: #C4c4c4;
+ }
+
+ /* .one{
+    background: #D7d7d7;
+ } */
+
+/* .two{
+    background: #FFEAEA;
+ }
+  */
+
+ /* .three{
+    background: #EAF9FF;
+ }
+  */
+
+ .inverse{
+    color: #fff;
+    background:#252525;
+ }
+
+ .inverse .btn:focus, .inverse .btn:hover{
+    background: #fff;
+        color: #252525;
+ }
+
+ /*
+ ### Instructions #### Extra spacing - Each “part” of the site needs 100px of space on the top and the bottom - Each “part” needs a different background color that extends the entire width of the viewport #### Colors: - #D7D7D7 - #FFEAEA - #EAF9FF
+ */
+

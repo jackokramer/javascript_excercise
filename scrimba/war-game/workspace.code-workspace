@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "war-game",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5504,
+		"liveServer.settings.multiRootWorkspaceName": "war-game"
+	}
+}

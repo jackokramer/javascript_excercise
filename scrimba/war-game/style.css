@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imgs/table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Exo 2", sans-serif;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        align-items: center;
+}
+
+button{
+    background: #fff100;
+    border: none;
+    cursor: pointer;
+    border: none;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+h3{
+    color: aliceblue;
+
+}
+
+.top-shelf{
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.card-slot{
+    border: 2px solid #000;
+    border-radius: 4px;
+    height: 120px;
+    width: calc(120px *5/7);
+    padding: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card-slot:nth-of-type(1){
+    margin-bottom: 50px;
+}
+
+
+#cards{
+    display: flex;
+    flex-direction: column;
+}
+
+#new-deck{
+    align-self: flex-start;
+}
+
+#draw-two{
+    align-self: stretch;
+}
+
+.draw{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+img.card{
+    width: 100%;
+    height: 100%;
+}
+
+.top{
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.top >p{
+    margin: 0;
+    margin-left: 10px;
+    color: aliceblue
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+
+/**
+ * Challenge:
+ *
+ * Start making this look lots nicer :)
+ *
+ * 1. Add a card table background with the img/table.png image provided.
+ * 2. Move the draw button to the very bottom of the page, full width
+ * 3. Add some button styles. You can use the photo on the slides
+ * for one option.
+ */
