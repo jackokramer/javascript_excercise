@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url('../imgs/mos-sukjaroenkraisria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: center;
+    height: 100vh;
+}
+
+.buttons{
+padding: 2rem;
+background:rgb(33, 20, 220);
+border: 3px solid black;
+max-width: 400px;
+margin: 0 auto;
+}
+
+button{
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: .4rem;
+    font-size: 1rem;
+    color: aliceblue;
+    background: slategray;
+    font-weight: bold;
+}
+
+#add-btn{
+    color: slategrey;
+    background: rgb(1, 84, 23);
+}
+
+#sub-btn {
+    color: rgb(242, 243, 243);
+    background: rgb(238, 22, 33);
+}
+
+#save{
+    background: purple;
+    color:rgb(242, 243, 243);
+}
