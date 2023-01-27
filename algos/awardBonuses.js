@@ -23,6 +23,17 @@ Hint: Remainder operator, modulo
  */
 
 function awardBonuses(){
+    for(let x=0; x<101;x++){
+        if(x%15===0){
+            console.log(`JACKPOT! 1 Million and a Yacht!${x}`)
+        } else if(x%5===0){
+            console.log(`$100,000 bonus!${x}`)
+        } else if(x%3===0){
+            console.log(`Divisible by 3 - Vacation!#${x}`)
+        } else {
+            console.log(`sorry go back to work ${x}`)
+        }
+    }
 }
 
 awardBonuses();
