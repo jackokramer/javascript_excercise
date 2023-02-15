@@ -23,10 +23,15 @@ function findTheWinner(obj){
     //initialize some variables to:
         // keep track of the current highest vote number.
     let highestVote = 0
+    // keep track of the winning item
     let wiiningItem = ""
+    // for each option in the food object
     for(let food in obj){
+        // is the current value higher than the value of highestvotes?
         if(obj[food]> highestVote){
+            // yes the new vlaue of highestvvotes in the current value
             highestVote = obj[food]
+            // winnningItem = the current property.
             wiiningItem = food
         }
     }
@@ -41,6 +46,7 @@ function findTheWinner(obj){
     //     }
     // }
     // return newObj
+    //  return the string announcing the winner using winningItem and highestVote
     return `the winner is ${wiiningItem} with the ${highestVote}`
 }
 
