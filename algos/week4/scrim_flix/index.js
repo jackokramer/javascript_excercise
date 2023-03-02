@@ -16,6 +16,8 @@ Expected output:
 
 */
 
+// Solution 1 nested loops not recommended.
+
 function getUniqueTags(data) {
     const tags = data.map(movie=>movie.tag).flat()
 
@@ -29,3 +31,20 @@ function getUniqueTags(data) {
 }
 
 console.log(getUniqueTags(mediaData));
+
+
+// Solution 2 - Look up
+
+const uniqueTagsTwo=()=>{
+    const tags = data.map(podcast=>podcast.tags).flat()
+    const uniqueTags={}
+    return tags.filter(tag=>{
+        if(!unique[tag]){
+            unique[tag]=true
+            return true
+        }
+        return false
+    })
+}
+
+console.log(uniqueTagsTwo(mediaData))
