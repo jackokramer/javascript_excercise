@@ -33,7 +33,7 @@ function getUniqueTags(data) {
 console.log(getUniqueTags(mediaData));
 
 
-// Solution 2 - Look up
+// Solution 2 - Look up BETTER
 
 const uniqueTagsTwo=()=>{
     const tags = data.map(podcast=>podcast.tags).flat()
