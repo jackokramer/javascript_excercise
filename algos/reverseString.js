@@ -48,5 +48,5 @@ function reverseStringsInArray(arr){
     return arr.map(item=>reverseString(item))
 }
 
-console.log(reverseString(title));
+console.log(reverseStringFull(title));
 console.log(reverseStringsInArray(messages));
