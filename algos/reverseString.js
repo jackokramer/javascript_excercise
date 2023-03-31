@@ -29,9 +29,9 @@ function reverseString(arr){
 
 // Without built in functions
 const reverseStringFull=(str)=>{
-    const reverseStr= ''
+    let reverseStr= ''
     for(let x = str.length-1; x>=0; x--){
-        reverseStr +=str[x]
+        reverseStr += str[x]
     }
     return reverseStr
 }
