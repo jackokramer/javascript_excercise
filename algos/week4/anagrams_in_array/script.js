@@ -51,5 +51,6 @@ function isAnagram(str1, str2){
     }
 }
 
+//  reviewed
 
 console.log(isAnagramInArray("Bob Ziroll Scrimba Teacher", anagrams));
