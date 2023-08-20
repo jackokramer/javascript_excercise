@@ -3,6 +3,9 @@
 // The plates are represented in the format '|Xkg|', where 'X' is the weight of the plate. For Example: ['|4kg|', '|22kg|', '|10kg|', '|24kg|', '|171kg|']
 
 // Plates weighing less than 10 kg have length of 5 hyphens, plates weighing between 10 kg and 99 kg have length of 6 hyphens and Plates weighing between 100 kg and 999 kg have length of 7 hyphens.
+//  x>10 === - - - - -
+//  x> 99 && x<10 === - - - - - -
+//  100<x && x<999 === - - - - - - -
 
 // Gymbro has a desired weight w he wants to benchpress, for that he has to put plates on the bar, but You don't actually put plates on the bar, rather, you replace hyphens with plates,
 
