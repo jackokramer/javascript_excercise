@@ -20,4 +20,3 @@ export const playlistArr = [
         albumArt: 'therefore-i-am.png'
     }
 ]
-
