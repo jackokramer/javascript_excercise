@@ -22,7 +22,7 @@ const playlistHtml = playlistArr.map(function(track){
     </div>
 </section>
     `
-})
+}).join(' ')
 
 
 
