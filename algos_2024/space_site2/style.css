@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    font-family: Montserrat;
+}
+
+header{
+    color: whitesmoke;
+    background: #282828;;
+}
+
+ul{
+    padding: 25px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 10px
+}
+
+button{
+    background: #cd6858;
+    color: aliceblue;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    align-self: center;
+}
+
+.logo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.icon{
+    width: 25px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 30px 25px;
+}
+
+li{
+    cursor: pointer;
+}
+
+.align-right{
+    margin-left: auto;
+}
+
+.item-img{
+    width: 100%;
+    margin: 0;
+}
+
+.exclusive{
+    padding: 20px 10px;
+    background: #cd6858;
+    color: aliceblue;
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+}
+
+.item{
+    position: relative;
+}
+
+.caption{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    gap: 20px;
+    margin: auto;
+}
+
+.pop-up{
+    border-radius: 50%;
+    color: aliceblue;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    background: #dda15e;
+    box-shadow: 1px 1px 5px #999;
+    display: flex;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+}
+.chatbox-img{
+    margin: auto;
+    width: 30%;
+
+}
+
+/*
+Challenge:
+1. Get this layout looking like the
+   screenshots on the slide.
+*/
