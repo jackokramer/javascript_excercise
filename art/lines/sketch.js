@@ -7,7 +7,7 @@ let size = 10;
 let offset = 4;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1000, 1000);
   rectMode(CENTER);
   angleMode(DEGREES);
   cols = width/size;
