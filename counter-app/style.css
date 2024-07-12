@@ -1,0 +1,49 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    background-image: url('images/aditya-vyas-0UgcUW_RoiA-unsplash.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    opacity: 95%;
+}
+
+.container{
+    max-width: 700px;
+    background: bisque;
+    max-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px
+}
+
+h3{
+    font-size: 32px;
+}
+
+#count-el{
+    font-size: 1em;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* justify-content: space-around; */
+}
+
+#plus-btn, #save-btn{
+    padding: 20px 50px;
+    border-radius: 8px;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1.5em;
+    opacity: 100%;
+}
+
+#plus-btn{
+    background: crimson;
+ }
+#save-btn {
+    background: forestgreen;
+}
