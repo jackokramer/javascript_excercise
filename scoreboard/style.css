@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(1, 1, 81);
+    color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.container{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.content{
+}
+.person{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    line-height: 35.89px;
+    align-items: center;
+    margin-bottom:40px;
+    text-transform: uppercase;
+}
+
+.points{
+    display: block;
+}
+
+.score{
+    height: 120px;
+    width:155px;
+    background: #080001;
+    margin-bottom: 20px;
+}
+
+#score_one, #score_two{
+    margin: 20px 0;
+}
+
+#points-one, #points-two{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #F94F6D;
+    font-size: 90px;
+    line-height: 126.67px;
+    align-items: center;
+}
+
+#playertwo_plus_one, #playertwo_plus_two, #playertwo_plus_three, #playerone_plus_one, #playerone_plus_two, #playerone_plus_three{
+    width: 45px;
+    height:45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #9AABD8;
+    background-color: rgb(1, 1, 81);
+}
+
+.reset-set {
+    width: 85px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #9AABD8;
+    background-color: rgb(1, 1, 81);
+}
+
+#playertwo_plus_one:hover,
+#playertwo_plus_two:hover,
+#playertwo_plus_three:hover,
+#playerone_plus_one:hover,
+#playerone_plus_two:hover,
+#playerone_plus_three:hover,
+.reset-set:hover{
+    background: #F94F6D;
+    color:aliceblue
+}
+
