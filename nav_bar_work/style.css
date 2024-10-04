@@ -119,3 +119,9 @@ body{
 #navbar-toggle[aria-expanded='true'] .icon-bar:last-child{
     transform:rotate(-45deg);
 }
+
+#navbar-menu{
+    position:fixed;
+    top: var(--navbar-height);
+    bottom: 0;
+}
