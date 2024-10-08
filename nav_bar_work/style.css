@@ -30,7 +30,7 @@ body{
     align-items: center;
 }
 
-#navbar-mobile{
+#navbar{
     --navbar-mobile-height: 64px;
     position: fixed;
     height: var(--navbar-height);
@@ -124,4 +124,14 @@ body{
     position:fixed;
     top: var(--navbar-height);
     bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+}
+
+#navabar-toggle[aria-expanded='true']+ #navbar-menu{
+    background: rgba(0, 0, 0, 0.4);
+    visibility: visible;
+    opacity: 1;
 }
