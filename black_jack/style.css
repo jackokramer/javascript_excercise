@@ -1,0 +1,28 @@
+body{
+    background-image: url('../images/poker.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: goldenrod;
+    font-size: 36px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+button{
+    background: goldenrod;
+    border-radius: 8px;
+    border: none;
+    padding: 14px 20px;
+    color: forestgreen;
+
+}
