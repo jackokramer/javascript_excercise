@@ -16,6 +16,11 @@ h1{
     font-size: 18px;
     font-weight: bold;
     color: aliceblue;
+    background: rgb(3, 108, 98);
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
 }
 
 button{
