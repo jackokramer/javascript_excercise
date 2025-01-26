@@ -31,7 +31,7 @@ function renderGame(){
     }
     messageEl.textContent= message
 }
-
+// new function
 function newCard(){
     console.log('drove')
     let newCard = 7
