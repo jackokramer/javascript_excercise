@@ -24,4 +24,4 @@ const playListHtml = playlistArr.map(function(track){
     `
 })
 
-document.getElementById('container').innerHTML = playListHtml
+document.getElementById('container').innerHTML = playListHtml.join(' ')
