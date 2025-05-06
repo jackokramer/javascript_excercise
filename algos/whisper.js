@@ -13,12 +13,15 @@ output: "shh... the kittens are sleeping"
 Hint: endsWith and slice
 */
 
-const whisper= (string) =>{
-    if(string.endsWith("!")){
-        return `shhhh...` + string.toLowerCase().slice(0, string.length-1)
+function whisper(string){
+    if(string.endsWith('!')){
+    return `shhh.....` + string.toLowerCase().slice(0, string.length-1)
+    } else{
+        return `shhhh...`+ string.toLowerCase().slice('')
     }
-    return `shhhh...` + string.toLowerCase().slice('')
 }
+
+
 
 console.log(whisper("PLEASE STOP SHOUTING."));
 console.log(whisper("MA'AM, this is a Wendy's!"));
