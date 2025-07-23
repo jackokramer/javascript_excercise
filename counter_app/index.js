@@ -1,18 +1,21 @@
 let count = 0
 const increment = document.getElementById('count-el')
-const saveEl = document.getElementById('save-btn')
+const saveBtn = document.getElementById('save-btn')
+const saveEl = document.getElementById('save-el')
 
-console.log(count)
+console.log(saveEl)
 
 function incrementBtn(){
     count++
     console.log(count)
-    increment.innerText = count
+    increment.textContent = count
 }
 
 // 1. Create a function, save(), which logs out the count when it's called
 
 function save(){
-    console.log(count)
-    let previous = 'Previous Entry'
+    let savedCount = `${count}  - `
+    saveEl.textContent += savedCount
+    increment.textContent = 0
+    count = 0
 }
