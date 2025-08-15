@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/Screenshot\ 2025-04-29\ at\ 12.58.13\ PM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: fit-content; */
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#count-el{
+    background: #222;
+    max-width: 100px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 8px;
+    color: aliceblue;
+    /* text-align: center; */
+    align-items: center;
+}
+
+#increment-btn{
+    padding: 8px 25px;
+    background: rgb(67, 112, 0);
+    color: aliceblue;
+    border-radius: 8px;
+    border:#222 2px solid;
+}
+
+#save-el{
+    padding: 8px 25px;
+    background: rgb(112, 0, 9);
+    color: aliceblue;
+    border-radius: 8px;
+    border: #222 2px solid;
+}
+
+#previous-enteries{
+    font-size: 16px;
+    color: antiquewhite;
+    opacity: 90%;
+}
+
+.entry{
+    background: #850;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    border: #222 2px solid;
+    max-width: 300px;
+
+}
