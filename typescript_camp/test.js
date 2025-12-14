@@ -1,4 +1,4 @@
-var multiply = function (a, b) {
+var multip = function (a, b) {
     return a * b;
 };
-console.log(multiply(4, 2));
+console.log(multip(4, 2));
