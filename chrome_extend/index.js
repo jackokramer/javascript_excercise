@@ -17,7 +17,7 @@ inputBtn.addEventListener('click',()=>{
 
 function renderLead(){
     let listItem = `<li>
-                    <a href="${myLeads}" target="_blank">`+ inputEl.value + `</a> </li>`
+                    <a href="${inputEl.value}" target="_blank">`+ inputEl.value + `</a> </li>`
     ulEl.innerHTML+=listItem
 } //more efficient as it doens't loop through everything
 
