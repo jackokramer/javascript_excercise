@@ -3,12 +3,12 @@ const inputBtn = document.getElementById('input-btn')
 const inputEl = document.getElementById('input-el')
 const ulEl = document.getElementById('ul-el')
 
+let name = localStorage.setItem('myLeads', 'hotleads.com')
 
-
+console.log(localStorage.getItem('hotleads.com'))
+localStorage.clear()
 inputBtn.addEventListener('click',()=>{
     myLeads.push(inputEl.value)
-        // Clear out the input field
-
     console.log(myLeads)
     renderLead()
     inputEl.value = ' '
