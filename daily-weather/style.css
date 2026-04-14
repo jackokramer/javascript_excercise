@@ -1,0 +1,146 @@
+:root {
+  --bg-card: #1e3a5f;
+  --bg-header: #16305a;
+  --bg-stats: #16305a;
+  --bg-forecast: #243f6a;
+  --bg-forecast-active: #3b6faa;
+  --color-city: #ffffff;
+  --color-country: #7eb8f7;
+  --color-date: #7eb8f7;
+  --color-temp: #ffffff;
+  --color-unit: #7eb8f7;
+  --color-condition: #c5deff;
+  --color-stat-label: #7eb8f7;
+  --color-stat-value: #ffffff;
+  --color-day-name: #7eb8f7;
+  --color-day-temp: #ffffff;
+  --border-radius-card: 20px;
+  --border-radius-stat: 10px;
+  --border-radius-forecast: 12px;
+  --padding: 1.5rem;
+}
+
+body {
+  color: var(--color-day-temp);
+}
+
+.container{
+  margin: 0 auto;
+
+}
+
+.weather-widget {
+  background: var(--bg-card);
+  border-radius: (var(--border-radius-card));
+  overflow: clip;
+  width: 400px;
+}
+
+.weather-header {
+  background: var(--bg-header);
+  padding: var(--padding);
+  display: flex;
+  gap: 1rem;
+}
+
+.location {
+  display: flex;
+  font-weight: 700;
+}
+
+.city {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.country {
+  font-size: 12px;
+  color: var(--color-country);
+}
+
+.date-label {
+}
+
+.weather-main {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.temp-block {
+  display: flex;
+  line-height: 1;
+}
+
+.temp-value {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.temp-unit {
+  color: var(--color-stat-label);
+  font-size: 24px;
+}
+
+.condition-block {
+  display: grid;
+  text-align: center;
+}
+
+.condition-icon {
+  font-size: 40px;;
+}
+
+.condition-text {
+  font-size: 12px;
+  color: var(--color-condition);
+}
+
+.weather-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-stats);
+  margin-inline: 1rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-stat);
+}
+
+.stat {
+  display: grid;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--color-date)
+}
+
+.stat-value {
+}
+
+.forecast-row {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1rem;
+  gap: 10px;
+}
+
+.forecast-day {
+  display: grid;
+  text-align: center;
+  font-size: 11px;;
+}
+
+.forecast-day.active {
+}
+
+.day-name {
+}
+
+.day-icon {
+}
+
+.day-temp {
+}
