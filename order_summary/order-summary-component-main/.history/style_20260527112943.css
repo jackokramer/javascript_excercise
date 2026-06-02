@@ -1,0 +1,45 @@
+*{
+
+}
+
+body{
+    box-sizing: border-box;
+    background-image: url('/images/pattern-background-desktop.svg');
+}
+
+button{
+    width: 200px;
+}
+
+.container{
+    padding:80px;
+    display: flex;
+    border-radius: 50px;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-container{
+    height: 60vh;
+    background: aliceblue;
+    margin: auto;
+}
+svg{
+    height: 20px;
+    width: 20px;
+}
+.plan{
+    display: flex;
+    height: 200px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+}
