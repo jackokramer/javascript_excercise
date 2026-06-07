@@ -4,7 +4,7 @@
 let amount = document.getElementById('amount')
 
 function generateRand(){
-    amount = Math.random()
+    amount = Math.florr(Math.random())
 }
 
 15%
@@ -20,4 +20,9 @@ function eighteen(){
 // 20%
 function twenty(){
 
+}
+
+//no tip
+function noTip(){
+    return amount
 }
