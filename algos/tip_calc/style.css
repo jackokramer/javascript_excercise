@@ -7,13 +7,47 @@ html{
 }
 
 .container{
-
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .tip-percentage{
+    max-width: 600px;
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.percentage{
+}
+
+button{
+    background: navy;
+}
+
+button:hover{
+    opacity: 70%;
+}
+
+#no_tip{
+    margin-top: 10px;
+    background: crimson;
 }
 
 #amount{
+    height: 30px;
+    width: 150px;
+    background: aliceblue;
+}
 
+button{
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    color:#fff;
 }

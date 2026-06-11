@@ -3,9 +3,13 @@
 // have three different buttons for percenetage
 let amount = document.getElementById('amount')
 
-function generateRand(){
-    amount = Math.florr(Math.random())
+amount.Math.floor(Math.random())
+console.log(amount)
+function generateRand(max){
+    amount = Math.floor(Math.random()*max)
+    return amount
 }
+console.log(generateRand(5))
 
 15%
 function fifteen(){
