@@ -25,4 +25,4 @@ function twenty(){
 //no tip
 function noTip(){
     return amount
-}
+}//
