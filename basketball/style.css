@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background: rgb(1, 1, 100);
+}
+
+h3{
+    font-family: Verdana;
+    color: #EEE;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 35.8px;
+}
+
+p{
+    font-family: "Geist Pixel",
+        sans-serif;
+    font-size: 90px;
+    /* line-height: 126px; */
+    color: #f94f6d;
+    text-align: center;
+}
+
+button{
+    color: #9AABD8;
+    background: transparent;
+    /* border: 2px; */
+    border-radius: 5px;
+    margin: 4px;
+    padding: 12px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons{
+        text-align: center;
+}
+
+
+.score{
+    width: 155px;
+    height: 125px;
+    background: #000;
+}
+
+.buttons{
+    padding-top: 10px;
+}
