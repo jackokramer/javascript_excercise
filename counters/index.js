@@ -15,5 +15,4 @@ saveBtn.addEventListener('click',()=>{
     prevEntry.textContent += ` ${count} - `
     count = 0
     countEl.textContent = count
-
 })

@@ -2,6 +2,26 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("/images/morgengry-berlin-5010635_1920.jpg");
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    background: #000;
+    max-width: 600px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.tip-percentage{
+    padding: 20px;
+    margin: 0 auto;
+}
+
 html{
 
 }

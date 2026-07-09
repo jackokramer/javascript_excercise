@@ -30,6 +30,12 @@ button{
     padding: 12px;
 }
 
+/* classes */
+
+.scoreOne{
+
+}
+
 .container{
     display: flex;
     justify-content: space-around;
