@@ -1,5 +1,5 @@
-let num1 = 8
-let num2 = 2
+const num1 = Math.floor(Math.random() * 20) + 1
+const num2 = Math.floor(Math.random() * 20) + 1
 let sumEl = document.getElementById('sum-el')
 let addEl = document.getElementById('add')
 let subEl = document.getElementById('sub')
@@ -37,3 +37,4 @@ multiEl.addEventListener('click',()=>{
 // E.g. if the user clicks on the "Plus" button, you should render
 // "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
 
+// export {num1, num2, sumEl, addEl, subEl, divideEl, multiEl}
