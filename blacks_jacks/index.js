@@ -8,16 +8,26 @@ let hasBlackJack = false
 let isAlive = true
 
 console.log(sum)
-// 2. Create a variable, sum, and set it to the sum of the two cards
-if(sum<21){
-    console.log('Do you want to draw another card')
-} else if(sum === 21){
-    console.log('black jack')
-    hasBlackJack = true
-    isAlive = true
+let message = ''
+
+// 2. Create a startGame() function. Move the conditional
+// below (line 11-20) inside the body of the function.
+
+function startGame(){
+    if(sum<21){
+        message = 'Do you want to draw another card'
+    } else if(sum === 21){
+        message = 'black jack'
+        hasBlackJack = true
+        isAlive = true
 } else if(sum > 21){
-    console.log('By Bye 👋🏼')
-    isAlive = false
+        message = 'By Bye 👋🏼'
+        isAlive = false
 }
 
+}
+
+startGame()
+console.log(startGame)
 console.log(isAlive)
+console.log(message)
