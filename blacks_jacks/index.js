@@ -6,15 +6,19 @@ let isAlive = true
 let message = ''
 let messageEl = document.getElementById('message-el')
 let sumEl = document.querySelector('#sum-el')
+let cardsEl = document.querySelector('#cards-el')
 
 function startGame(){
+    renderGame()
+}
+function renderGame(){
+    cardsEl.textContent = `Cards: ${firstCard} ${secondCardCard}`
     sumEl.textContent = `Sum: ${sum}`
     if(sum<21){
         message = 'Do you want to draw another card'
     } else if(sum === 21){
         message = 'black jack'
         hasBlackJack = true
-        isAlive = true
 } else if(sum > 21){
         message = 'By Bye 👋🏼'
         isAlive = false
@@ -22,7 +26,9 @@ function startGame(){
     messageEl.textContent = message
 }
 
-startGame()
-console.log(startGame)
-console.log(isAlive)
-console.log(message)
+function newCard(){
+    console.log("draw new card")
+    let cardVar =  7//Math.floor(Math.root(2)+11)
+    sum += cardVar
+    renderGame()
+}

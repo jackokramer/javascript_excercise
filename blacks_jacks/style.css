@@ -34,13 +34,6 @@ p{
     font-style: italic;
 }
 
-/*
-3. Style the button according to the provided design
-text color - #016f32
-width      - 150px
-background - goldenrod
- */
-
  button{
     width: 150px;
     background: goldenrod;
@@ -49,4 +42,5 @@ background - goldenrod
     font-weight: 900;
     border: none;
     border-radius: 4px;
+    margin-bottom: 10px;
  }
