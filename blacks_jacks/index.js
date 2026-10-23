@@ -33,3 +33,6 @@ function newCard(){
     sum += cardVar
     renderGame()
 }
+
+
+// arrays are compsite data types rather than a primitive data type like booleans and numbers.
