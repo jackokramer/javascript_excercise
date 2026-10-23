@@ -29,10 +29,13 @@ function renderGame(){
 
 function newCard(){
     console.log("draw new card")
-    let cardVar =  7//Math.floor(Math.root(2)+11)
-    sum += cardVar
+    let card =  7//Math.floor(Math.root(2)+11)
+    sum += card
+    cards.push(card)
+    console.log(cards)
     renderGame()
 }
 
 
 // arrays are compsite data types rather than a primitive data type like booleans and numbers.
+//methods are function on an object
