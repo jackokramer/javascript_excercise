@@ -39,3 +39,17 @@ function newCard(){
 
 // arrays are compsite data types rather than a primitive data type like booleans and numbers.
 //methods are function on an object
+
+
+let messages = [
+    "Hey, how's it going?",
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately.",
+    "Same here!",
+    "Great to hear",
+    "🙌"
+]
+
+for(let x = 0; x<messages.length;x++){
+    console.log(messages[x])
+}
