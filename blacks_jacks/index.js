@@ -1,5 +1,5 @@
-let firstCard = 10 //Math.floor(Math.random(11)+11)
-let secondCardCard =4 //Math.floor(Math.random(11)+11)
+let firstCard = getRandomCard() //Math.floor(Math.random(11)+11)
+let secondCardCard = getRandomCard() //Math.floor(Math.random(11)+11)
 let cards = [firstCard, secondCardCard] // array - ordered list of items
 let sum = firstCard + secondCardCard
 let hasBlackJack = false
@@ -9,11 +9,19 @@ let messageEl = document.getElementById('message-el')
 let sumEl = document.querySelector('#sum-el')
 let cardsEl = document.querySelector('#cards-el')
 
+// Create a function, getRandomCard(), that always returns the number 5
+function getRandomCard(){
+
+}
 function startGame(){
     renderGame()
 }
 function renderGame(){
-    cardsEl.textContent = `Cards: ${cards[0]} ${cards[1]}`
+    cardsEl.textContent = `Cards: `
+        // Create a for loop that renders out all the cards instead of just two
+    for( let x = 0; x<cards.length; x+=1){
+        cardsEl.textContent += `${cards[x]} `
+    }
     sumEl.textContent = `Sum: ${sum}`
     if(sum<21){
         message = 'Do you want to draw another card'
@@ -39,17 +47,3 @@ function newCard(){
 
 // arrays are compsite data types rather than a primitive data type like booleans and numbers.
 //methods are function on an object
-
-
-let messages = [
-    "Hey, how's it going?",
-    "I'm great, thank you! How about you?",
-    "All good. Been working on my portfolio lately.",
-    "Same here!",
-    "Great to hear",
-    "🙌"
-]
-
-for(let x = 0; x<messages.length;x++){
-    console.log(messages[x])
-}
