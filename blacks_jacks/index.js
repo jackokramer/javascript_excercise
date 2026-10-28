@@ -1,5 +1,5 @@
-let firstCard = getRandomCard() //Math.floor(Math.random(11)+11)
-let secondCardCard = getRandomCard() //Math.floor(Math.random(11)+11)
+let firstCard = Math.floor(Math.random()*11) //Math.floor(Math.random(11)+11)
+let secondCardCard = Math.floor(Math.random()*11) //Math.floor(Math.random(11)+11)
 let cards = [firstCard, secondCardCard] // array - ordered list of items
 let sum = firstCard + secondCardCard
 let hasBlackJack = false
@@ -11,7 +11,7 @@ let cardsEl = document.querySelector('#cards-el')
 
 // Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard(){
-
+    return 5
 }
 function startGame(){
     renderGame()
@@ -37,7 +37,7 @@ function renderGame(){
 
 function newCard(){
     console.log("draw new card")
-    let card =  7//Math.floor(Math.root(2)+11)
+    let card =  getRandomCard()//Math.floor(Math.root(2)+11)
     sum += card
     cards.push(card)
     console.log(cards)
