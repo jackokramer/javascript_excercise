@@ -1,5 +1,5 @@
-let firstCard = Math.floor(Math.random()*11) //Math.floor(Math.random(11)+11)
-let secondCardCard = Math.floor(Math.random()*11) //Math.floor(Math.random(11)+11)
+let firstCard = Math.floor(Math.random()*11)+1 //Math.floor(Math.random(11)+11)
+let secondCardCard = Math.floor(Math.random()*11)+1 //Math.floor(Math.random(11)+11)
 let cards = [firstCard, secondCardCard] // array - ordered list of items
 let sum = firstCard + secondCardCard
 let hasBlackJack = false
