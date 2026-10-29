@@ -1,19 +1,35 @@
-let firstCard = Math.floor(Math.random()*11)+1 //Math.floor(Math.random(11)+11)
-let secondCardCard = Math.floor(Math.random()*11)+1 //Math.floor(Math.random(11)+11)
-let cards = [firstCard, secondCardCard] // array - ordered list of items
-let sum = firstCard + secondCardCard
+let cards = [] // array - ordered list of items
+let sum = 0
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false
 let message = ''
 let messageEl = document.getElementById('message-el')
 let sumEl = document.querySelector('#sum-el')
 let cardsEl = document.querySelector('#cards-el')
 
+console.log(cards)
+
 // Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard(){
-    return 5
+    //return firstCard + secondCardCard
+     //if else statement
+    let randomNumber = Math.floor(Math.random()*13)+1
+    if(randomNumber>10){
+        return 10
+    } else if(randomNumber === 1){
+        return 11
+    } else{
+        return randomNumber
+    }
 }
+
+console.log(cards)
 function startGame(){
+    isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    cards =[firstCard, secondCard]
+    sum = firstCard + secondCard
     renderGame()
 }
 function renderGame(){
