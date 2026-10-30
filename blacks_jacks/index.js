@@ -53,11 +53,13 @@ function renderGame(){
 
 function newCard(){
     console.log("draw new card")
+    if(isAlive === true && hasBlackJack=== false){
     let card =  getRandomCard()//Math.floor(Math.root(2)+11)
     sum += card
     cards.push(card)
     console.log(cards)
     renderGame()
+    }
 }
 
 
