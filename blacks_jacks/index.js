@@ -61,7 +61,7 @@ function newCard(){
     renderGame()
     }
 }
-
+//
 
 // arrays are compsite data types rather than a primitive data type like booleans and numbers.
 //methods are function on an object
