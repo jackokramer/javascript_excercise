@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background: #000;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+
+/* class */
+.container{
+ background: #1F2937;
+ max-width: 800px;
+ margin: 0 auto;
+}
+.green-header{
+    color: #10B981;
+}
+
+/* .karla-<uniquifier> {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
