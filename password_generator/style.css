@@ -20,6 +20,10 @@ h1{
     color: #10B981;
 }
 
+#stage{
+    color: aliceblue;
+}
+
 /* .karla-<uniquifier> {
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
