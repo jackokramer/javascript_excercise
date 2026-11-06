@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     background: #000;
@@ -5,8 +8,29 @@ body {
 
 h1{
     font-size: 40px;
+    line-height: 40px;
     font-weight: 900;
+    font-family: Karla;
     color: aliceblue;
+    letter-spacing: -2.5%;
+}
+
+p{
+    font-family: Inter;
+    font-weight: 100px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #2F3E53;
+    padding: 0;
+    width: 100%;
+    margin-top: 60px;
 }
 
 
@@ -14,19 +38,40 @@ h1{
 .container{
  background: #1F2937;
  max-width: 800px;
- margin: 0 auto;
+ height: 500px;
+ margin: 50px auto;
+ padding: 40px;
 }
 .green-header{
     color: #10B981;
 }
 
+/* ids */
+
 #stage{
-    color: aliceblue;
+    color: #55F991;
+    display: flex;
+    width: 200px;
+    height: 39px;
+    background: #273549;
+    margin-top: 30px;
+    border-radius: 8px;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    font-family: Inter;
+    font-weight: 500;
 }
 
-/* .karla-<uniquifier> {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-} */
+#generate-password{
+    color:aliceblue;
+    background: #10B981;
+    padding:15px 42px;
+    border: none;
+    /* margin-top: 30px; */
+    border-radius: 8px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0;
+}
