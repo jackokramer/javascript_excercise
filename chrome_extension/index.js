@@ -1,21 +1,23 @@
-let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
+let myLeads = []
 let inputField = document.getElementById('input-el')
 let saveButton = document.getElementById('input-btn')
 const ulEl = document.getElementById('ul-el')
 
 saveButton.addEventListener('click',()=>{
     myLeads.push(inputField.value)
-    console.log(myLeads)
+    inputField.value = ' '
+    renderLeads()
 })
 
+// 1. Create a variable, listItems, to hold all the HTML for the list items
+// Assign it to an empty string to begin with
+function renderLeads(){
+let listItems = ''
 for(let x = 0; x<myLeads.length; x++){
-    console.log(myLeads[x])
-    //ulEl.innerHTML += `<li>${myLeads[x]}</li> `
-    // create element
-    const llistEl = document.createElement('li')
-    // see text content
-    llistEl.textContent = myLeads[x]
-    //append to ul
-    ulEl.append(li)
-
+    listItems += `<li>
+        <a href="${myLeads[x]}" target="_blank">${myLeads[x]}</a>
+    </li>`
+}
+// 3. Render the listItems inside the unordered list using ulEl.innerHTML
+ulEl.innerHTML += listItems
 }
