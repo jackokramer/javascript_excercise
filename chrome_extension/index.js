@@ -10,5 +10,12 @@ saveButton.addEventListener('click',()=>{
 
 for(let x = 0; x<myLeads.length; x++){
     console.log(myLeads[x])
-    ulEl.innerHTML += `<li>${myLeads[x]}</li> `
+    //ulEl.innerHTML += `<li>${myLeads[x]}</li> `
+    // create element
+    const llistEl = document.createElement('li')
+    // see text content
+    llistEl.textContent = myLeads[x]
+    //append to ul
+    ulEl.append(li)
+
 }
