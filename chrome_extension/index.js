@@ -1,11 +1,20 @@
 let myLeads = []
+// myLeads.push('hotleadszzz')
 let inputField = document.getElementById('input-el')
 let saveButton = document.getElementById('input-btn')
 const ulEl = document.getElementById('ul-el')
 
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem('myLeads'))
+console.log(leadsFromLocalStorage)
+
+let keyName = localStorage.getItem('myLeads')
+console.log(keyName)
+
 saveButton.addEventListener('click',()=>{
     myLeads.push(inputField.value)
     inputField.value = ' '
+    localStorage.setItem('myLeads', JSON.stringify(myLeads))
+    console.log(myLeads)
     renderLeads()
 })
 
