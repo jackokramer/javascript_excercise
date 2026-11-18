@@ -20,13 +20,29 @@ a {
     color:#5f9341;
 }
 
+button{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 150px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+}
+
 /* class */
 .container{
     width: 100%;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
+}
 
+.buttons{
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -38,15 +54,15 @@ a {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-
-
 }
 
 #input-btn{
-    padding: 10px 20px;
     color: aliceblue;
-    border: none;
     background-color: #5f9341;
-    width: 150px;
-    border-radius: 8px;
+}
+
+#delete-btn{
+    color: #5f9341;
+    background-color: aliceblue;
+    margin-left: 20px;
 }
